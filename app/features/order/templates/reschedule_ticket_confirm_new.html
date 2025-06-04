@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<div class="container card p-4 mt-4 shadow-sm">
+    <h2 class="mb-4">{{ title }}</h2>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
+    <p><strong>Order ID:</strong> {{ order_id }}</p>
+
+    <h4>Original Ticket Details:</h4>
+    {% if original_ticket_sli and original_trip_details %}
+        <div class="card bg-light p-3 mb-3">
+            <p class="mb-1"><strong>Item:</strong> {{ original_ticket_sli.item_name }}</p>
+            <p class="mb-1"><strong>Route:</strong> {{ original_trip_details.route }}</p>
+            <p class="mb-1"><strong>Date:</strong> {{ original_trip_details.date }}</p>
+            <p class="mb-1"><strong>Time:</strong> {{ original_trip_details.time }}</p>
+            <p class="mb-0"><strong>Original Price:</strong> RM{{ "%.2f"|format(original_ticket_sli.unit_price) }}</p>
+        </div>
+    {% else %}
+        <p class="text-danger">Could not load original ticket details completely.</p>
+    {% endif %}
+
+    {% if alternative_trips_available %}
+        <h4 class="mt-4">Select New Trip:</h4>
+        <form method="POST" action="{{ url_for('order.reschedule_ticket_confirm_submit') }}">
+            {{ form.hidden_tag() }}
+            {{ form.order_id() }} 
+            {{ form.original_line_item_id() }}
+            {{ form.original_trip_id() }}
+
+            {% if form.selected_new_trip_id.errors %}
+                <ul class="errors text-danger list-unstyled mb-2">
+                    {% for error in form.selected_new_trip_id.errors %}<li><small>{{ error }}</small></li>{% endfor %}
+                </ul>
+            {% endif %}
+            <div class="list-group mb-3">
+                {% for subfield in form.selected_new_trip_id %}
+                    <label class="list-group-item list-group-item-action d-flex align-items-center">
+                        {{ subfield(class="form-check-input me-3") }} {{ subfield.label.text }}
+                    </label>
+                {% endfor %}
+            </div>
+            
+            <div class="form-group mt-4">
+                <button type="submit" class="btn btn-success">
+                   <i class="fas fa-check me-1"></i> {{ form.submit_confirm.label.text if form.submit_confirm.label else 'Confirm Reschedule' }}
+                </button>
+                <a href="{{ url_for('order.reschedule_ticket_find') }}" class="btn btn-outline-secondary ms-2">Cancel</a>
+            </div>
+        </form>
+    {% else %}
+        {% if not get_flashed_messages(category_filter=["info"]) %} {# If no specific "no alternatives" message was flashed #}
+            <p class="alert alert-warning mt-3">No alternative trips are available for rescheduling on this route at the moment.</p>
+        {% endif %}
+        <a href="{{ url_for('order.reschedule_ticket_find') }}" class="btn btn-secondary mt-3">Try Another Order</a>
+    {% endif %}
+    <a href="{{ url_for('order.view_order', order_id=order_id) }}" class="btn btn-link mt-3">Back to Order Details</a>
+</div>
+{% endblock %}

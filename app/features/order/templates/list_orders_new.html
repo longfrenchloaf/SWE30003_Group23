@@ -1,0 +1,132 @@
+{% extends "layout.html" %}
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <h1 class="mb-4 page-title">{{ title }}</h1>
+    <div class="mb-3">
+        <a href="{{ url_for('order.buy_ticket') }}" class="btn btn-primary me-2"><i class="fas fa-ticket-alt me-1"></i> Buy New Ticket</a>
+        <a href="{{ url_for('order.buy_merchandise_bulk') }}" class="btn btn-info me-2"><i class="fas fa-shopping-bag me-1"></i> Buy Merchandise</a>
+        <a href="{{ url_for('order.reschedule_ticket_find') }}" class="btn btn-warning me-2"><i class="fas fa-calendar-alt me-1"></i> Reschedule Ticket</a>
+        <a href="{{ url_for('order.cancel_order_find') }}" class="btn btn-danger"><i class="fas fa-ban me-1"></i> Cancel Order</a>
+    </div>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                    {{ message }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
+    {% if orders %}
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead class="table-light">
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Order Type / Items</th>
+                        <th>Status</th>
+                        <th>Total Amount</th>
+                        <th>Payment Status</th>
+                        <th>Order Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {# 'orders' is now a list of Order objects #}
+                    {% for order in orders %}
+                    <tr>
+                        <td>
+                            {# Access orderID using dot notation #}
+                            <a href="{{ url_for('order.view_order', order_id=order.orderID) }}">
+                                {{ order.orderID }}
+                            </a>
+                        </td>
+                        <td>
+                            {# Use Order object methods for summaries #}
+                            {{ order.get_primary_item_type_summary() }} <br>
+                            <small class="text-muted"><em>({{ order.get_item_summary_names() }})</em></small>
+                        </td>
+                        <td>
+                            {# Access status attribute (an Enum) and its value #}
+                            {% set status_class = 'secondary' %} {# Default class #}
+                            {# Compare against OrderStatus Enum members #}
+                            {% if order.status == OrderStatus.PAID or order.status == OrderStatus.COMPLETED %}
+                                {% set status_class = 'success' %}
+                            {% elif order.status == OrderStatus.PENDING_PAYMENT %}
+                                {% set status_class = 'warning' %}
+                            {% elif order.status == OrderStatus.CANCELLED or order.status == OrderStatus.FAILED %}
+                                {% set status_class = 'danger' %}
+                            {# Add other statuses if needed #}
+                            {% endif %}
+                            {# Display status value and replace underscore #}
+                            <span class="badge bg-{{ status_class }}">{{ order.status.value.replace('_', ' ') }}</span>
+                        </td>
+                        <td>
+                            {# Access totalAmount attribute and format #}
+                            RM{{ "%.2f"|format(order.totalAmount) }}
+                            {# RM{{ order.totalAmount | float | default(0.0) | format_currency }} #}
+                        </td>
+                        <td>
+                            {# Check if payment exists (it's optional), then access paymentStatus #}
+                            {% if order.payment %}
+                                {% set payment_status_class = 'secondary' %}
+                                {# Compare against PaymentStatus Enum members #}
+                                {% if order.payment.paymentStatus == PaymentStatus.SUCCESSFUL %}
+                                    {% set payment_status_class = 'success' %}
+                                {% elif order.payment.paymentStatus == PaymentStatus.PENDING %}
+                                    {% set payment_status_class = 'warning' %}
+                                {% elif order.payment.paymentStatus == PaymentStatus.FAILED %}
+                                    {% set payment_status_class = 'danger' %}
+                                {% elif order.payment.paymentStatus == PaymentStatus.REFUNDED %}
+                                    {% set payment_status_class = 'info' %}
+                                {# Add other payment statuses if needed #}
+                                {% endif %}
+                                {# Display payment status value #}
+                                <span class="badge bg-{{ payment_status_class }}">{{ order.payment.paymentStatus.value }}</span>
+                            {% else %}
+                                <span class="badge bg-secondary">No Payment</span>
+                            {% endif %}
+                        </td>
+                        <td>
+                            {# Access orderTimestamp attribute (a datetime object) and format #}
+                            <small>{{ order.orderTimestamp.strftime('%Y-%m-%d %H:%M') }} UTC</small>
+                        </td>
+                        <td>
+                            {# Access orderID using dot notation for URLs #}
+                            <a href="{{ url_for('order.view_order', order_id=order.orderID) }}" class="btn btn-sm btn-outline-primary mb-1">View</a>
+
+                            {# Access status using dot notation for conditional actions #}
+                            {% if order.status not in [OrderStatus.COMPLETED, OrderStatus.CANCELLED, OrderStatus.FAILED] %}
+                                {% if order.status == OrderStatus.PENDING_PAYMENT %}
+                                <a href="{{ url_for('order.pay_order', order_id=order.orderID) }}" class="btn btn-sm btn-success mb-1">Pay</a>
+                                {% elif order.status == OrderStatus.PAID %}
+                                    <a href="{{ url_for('order.cancel_order_find', order_id=order.orderID) }}" class="btn btn-sm btn-danger mb-1">Cancel</a>
+
+                                    {# Filter line items by type 'ticket' and status ACTIVE #}
+                                    {% set active_ticket_items = order.orderLinetems 
+                                        | selectattr('item_type', 'equalto', 'ticket') 
+                                        | selectattr('line_item_status', 'equalto', TicketStatus.ACTIVE) 
+                                    %}
+                                    {# Check if the resulting filtered list is not empty #}
+                                    {% if active_ticket_items %}
+                                        <a href="{{ url_for('order.reschedule_ticket_find', order_id=order.orderID) }}" class="btn btn-sm btn-warning mb-1">Reschedule</a>
+                                    {% endif %}
+
+                                {% endif %}
+                            {% endif %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    {% else %}
+        <p class="alert alert-info">You have no orders yet.</p>
+    {% endif %}
+</div>
+{% endblock %}

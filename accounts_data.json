@@ -1,0 +1,50 @@
+[
+  {
+    "accountID": "acc001",
+    "name": "Tester",
+    "email": "Testuser@example.com",
+    "phoneNumber": "0129485473",
+    "password_hash": "scrypt:32768:8:1$a8guwlGHTmyft502$008410d70376d8fd046e7eace5bac819cb7a5d03ea65539a64779950bbe2046527ef296bc82b7d93bb548da6bf256bd6b65523d343ca6f87533fe1916f1afe70",
+    "orders": []
+  },
+  {
+    "accountID": "acc002",
+    "name": "Natalie",
+    "email": "natho@example.com",
+    "phoneNumber": "0193845921",
+    "password_hash": "scrypt:32768:8:1$CMU3lnbaDCD2xPk7$4cd80fd65657e8d07e5fdf82458241ba92adb35dae4ae107e69d7a19a1ca882807fd6429d70cb300d8a73820a545962bcdacd2aee45fe727bda7fd536e20beca",
+    "orders": []
+  },
+  {
+    "accountID": "acc003",
+    "name": "Brenda Sim",
+    "email": "brenda@example.com",
+    "phoneNumber": "0123456789",
+    "password_hash": "scrypt:32768:8:1$oiHeYf1cbm1G17LE$9aa1f1de2eb4c705d444d3e4bfd1a3e1e94cfe509f0178b85110e9a338d323855bd2b0edcae23b9ea08350971f71e18b5f356288e254e0a09f9e86f6598dd3e4",
+    "orders": []
+  },
+  {
+    "accountID": "acc004",
+    "name": "Jay",
+    "email": "jay@example.com",
+    "phoneNumber": "0123456789",
+    "password_hash": "scrypt:32768:8:1$RBNuPYl5bph9rww3$a06fd44c46ebe4079bcc482b2c1b88ba17d8fa1fa5e9af0a2f30d3004aea4c1f55012d6dbbbf43c9520cd639620a8fd47324143905a894a89e5e43b8381653ef",
+    "orders": []
+  },
+  {
+    "accountID": "acc005",
+    "name": "Natalie Ho",
+    "email": "natalie@example.com",
+    "phoneNumber": "0123456789",
+    "password_hash": "scrypt:32768:8:1$7nlPpHU7Dlu6MnMM$deea4294a24c844f7085a8a6daafb4b0974cf76e2e368dba20a99bd17894fb270bcb9082fdf1349afbcbdbd881cfe9a85b845f61cd704f63fcafcad7e5b92069",
+    "orders": []
+  },
+  {
+    "accountID": "acc006",
+    "name": "Natalie Ho",
+    "email": "natalieho@example.com",
+    "phoneNumber": "0123456789",
+    "password_hash": "scrypt:32768:8:1$upN4MsLjDIkZMinG$2a893b5d75877b28c5ed9fea7c0627b5e2ae67b3e4043531a7c3ac915126ba2bc2310cc6d45960af1be8152530d659fb3c1c6426429fc7e6fd9463b1e3dfc4ec",
+    "orders": []
+  }
+]

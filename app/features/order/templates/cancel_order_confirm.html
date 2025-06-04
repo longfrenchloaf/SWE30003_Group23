@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<div class="container card p-4 mt-4 shadow-sm">
+    <h2 class="mb-4">{{ title }}</h2>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
+    <p><strong>Order ID:</strong> {{ order_id }}</p>
+    <p>The following <strong>active</strong> items in this order will be cancelled:</p>
+
+    {% if active_items_to_cancel %}
+        <ul class="list-group mb-3">
+        {% for item in active_items_to_cancel %}
+            <li class="list-group-item">
+                {{ item.quantity }} x <strong>{{ item.item_name }}</strong> (Type: {{ item.item_type.capitalize() }})
+                - Price: RM{{ "%.2f"|format(item.lineTotal) }}
+            </li>
+        {% endfor %}
+        </ul>
+        
+        {% if order_data_for_display.payment and order_data_for_display.payment.paymentStatus == 'SUCCESSFUL' %}
+            <p class="alert alert-warning"><i class="fas fa-exclamation-triangle me-1"></i>This order was paid. If you confirm cancellation, a refund will be processed for the paid amount related to these active items (simulated).</p>
+        {% endif %}
+
+        <form method="POST" action="{{ url_for('order.cancel_order_confirm_action') }}">
+            {{ form.hidden_tag() }}
+            {{ form.order_id() }} {# Hidden field with order_id #}
+            <div class="form-group mt-4">
+                <button type="submit" class="btn btn-danger">
+                    <i class="fas fa-times-circle me-1"></i>{{ form.submit_confirm.label.text if form.submit_confirm.label else 'Confirm Cancellation' }}
+                </button>
+                <a href="{{ url_for('order.view_order', order_id=order_id) }}" class="btn btn-outline-secondary ms-2">Do Not Cancel</a>
+            </div>
+        </form>
+    {% else %}
+        <p class="alert alert-info">No active items found to cancel for this order. It might have been processed already.</p>
+        <a href="{{ url_for('order.list_orders') }}" class="btn btn-secondary mt-3">Back to My Orders</a>
+    {% endif %}
+</div>
+{% endblock %}

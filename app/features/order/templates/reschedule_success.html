@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<div class="container card">
+    <h2><i class="fas fa-check-circle text-success"></i> {{ title }}</h2>
+    <p class="alert alert-success">Your ticket has been successfully rescheduled!</p>
+
+    <h4>Order ID: {{ order.orderID }}</h4>
+
+    <h4>New Ticket Details:</h4>
+    <p><strong>Trip:</strong> {{ new_ticket.trip }}</p>
+    <p><strong>Validity:</strong> {{ new_ticket.validityPeriod }}</p>
+    {% if new_ticket.seat %}
+    <p><strong>Seat:</strong> {{ new_ticket.seat.seatIdentifier }}</p>
+    {% endif %}
+    <p><strong>Fare:</strong> RM{{ "%.2f"|format(new_ticket.farePaid) }}</p>
+    <p><strong>Ticket ID:</strong> {{ new_ticket.ticketID }}</p>
+    <p><strong>Status:</strong> <span class="badge status-{{ new_ticket.status.value.lower() }}">{{ new_ticket.status.value }}</span></p>
+
+    <div class="mt-4">
+        <a href="{{ url_for('order.view_order', order_id=order.orderID) }}" class="btn btn-info">View Updated Order</a>
+        <a href="{{ url_for('home.index') }}" class="btn btn-secondary">Back to Home</a>
+    </div>
+</div>
+{% endblock %}

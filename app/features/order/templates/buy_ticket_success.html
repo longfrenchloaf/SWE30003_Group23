@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="card p-4 shadow-sm">
+        <h2 class="card-title text-success mb-3"><i class="fas fa-check-circle me-2"></i>{{ title }}</h2>
+        <div class="alert alert-success">
+            Your ticket purchase was successful!
+        </div>
+
+        <h4>Order Summary</h4>
+        {# Access order ID directly from the order object passed from the route #}
+        <p><strong>Order ID:</strong> {{ order.orderID }}</p>
+
+        <h4>Purchased Ticket Details</h4>
+        {# Check if the ticket SLI and associated trip objects were passed and exist #}
+        {% if purchased_ticket_sli and associated_trip %}
+            <ul class="list-unstyled">
+                {# Access details from the associated Trip object and the SLI object #}
+                {# The item_name on the SLI usually holds the route string #}
+                <li><strong>Route:</strong> {{ purchased_ticket_sli.item_name }}</li>
+                {# Date and Time come from the associated Trip object #}
+                <li><strong>Date:</strong> {{ associated_trip.date }}</li>
+                <li><strong>Time:</strong> {{ associated_trip.time }}</li>
+                {# Price comes from the unit_price on the SLI #}
+                <li><strong>Price:</strong> RM{{ "%.2f"|format(purchased_ticket_sli.unit_price) }}</li>
+            </ul>
+        {% else %}
+            <p>Purchased ticket details could not be loaded.</p>
+        {% endif %}
+
+        <hr>
+        <p class="mt-3">
+            {# Use the order object's ID for the URL #}
+            <a href="{{ url_for('order.view_order', order_id=order.orderID) }}" class="btn btn-primary me-2"><i class="fas fa-eye me-1"></i>View Full Order</a>
+            <a href="{{ url_for('order.buy_ticket') }}" class="btn btn-info me-2"><i class="fas fa-ticket-alt me-1"></i>Buy Another Ticket</a>
+            <a href="{{ url_for('home.index') }}" class="btn btn-secondary"><i class="fas fa-home me-1"></i>Back to Homepage</a>
+        </p>
+    </div>
+</div>
+{% endblock %}

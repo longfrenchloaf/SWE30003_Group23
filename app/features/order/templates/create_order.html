@@ -1,0 +1,105 @@
+{% extends "layout.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% endblock %}
+
+{% block content %}
+<div class="order-form card">
+    <h2><i class="fas fa-shopping-cart" style="margin-right:10px; color: var(--accent-color);"></i>{{ title }}</h2>
+    <form method="POST" action="{{ url_for('order.create_new_order') }}" id="createOrderForm">
+        {{ form.hidden_tag() }}
+
+        <div class="form-section">
+            <h3><i class="fas fa-user-circle"></i> Account Information</h3>
+            <div>
+                {{ form.account_id.label(class="form-label") }}
+                {{ form.account_id(class="form-control form-select") }}
+                {% if form.account_id.errors %}<div class="errors">{% for error in form.account_id.errors %}<small class="text-danger">{{ error }}</small><br>{% endfor %}</div>{% endif %}
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h3><i class="fas fa-box-open"></i> Order Items</h3>
+            <p><em>Note: For simplicity, add one type of item per order creation.</em></p>
+            
+            <h4><i class="fas fa-tshirt"></i> Merchandise</h4>
+            <div class="form-row">
+                <div>
+                    {{ form.merchandise_item.label(class="form-label") }}
+                    {{ form.merchandise_item(class="form-control form-select") }}
+                    {% if form.merchandise_item.errors %}<div class="errors">{% for error in form.merchandise_item.errors %}<small class="text-danger">{{ error }}</small><br>{% endfor %}</div>{% endif %}
+                </div>
+                <div>
+                    {{ form.merchandise_quantity.label(class="form-label") }}
+                    {{ form.merchandise_quantity(class="form-control", placeholder="e.g., 1") }}
+                    {% if form.merchandise_quantity.errors %}<div class="errors">{% for error in form.merchandise_quantity.errors %}<small class="text-danger">{{ error }}</small><br>{% endfor %}</div>{% endif %}
+                </div>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h3><i class="fas fa-credit-card"></i> Payment Details</h3>
+            <p class="alert alert-info"><i class="fas fa-info-circle"></i> Payment processing is simulated. No real transaction will occur.</p>
+            
+            <div class="payment-options">
+                {{ form.payment_type.label(class="form-label") }}<br>
+                {% for subfield in form.payment_type %}
+                <label>
+                    {{ subfield }} 
+                    {% if subfield.data == 'card' %}<i class="fas fa-credit-card"></i>{% elif subfield.data == 'ewallet' %}<i class="fas fa-wallet"></i>{% endif %}
+                    <span>{{ subfield.label.text }}</span>
+                </label>
+                {% endfor %}
+                {% if form.payment_type.errors %}<div class="errors">{% for error in form.payment_type.errors %}<small class="text-danger">{{ error }}</small><br>{% endfor %}</div>{% endif %}
+            </div>
+
+            <!-- Card Payment Details -->
+            <div id="card-payment-details" class="payment-details-group hidden">
+                <h4>Card Information</h4>
+                <div>
+                    {{ form.card_name.label(class="form-label") }}
+                    {{ form.card_name(class="form-control") }}
+                    {% if form.card_name.errors %}<div class="errors">{% for error in form.card_name.errors %}<small class="text-danger">{{ error }}</small><br>{% endfor %}</div>{% endif %}
+                </div>
+                <div>
+                    {{ form.card_number.label(class="form-label") }}
+                    {{ form.card_number(class="form-control") }}
+                    {% if form.card_number.errors %}<div class="errors">{% for error in form.card_number.errors %}<small class="text-danger">{{ error }}</small><br>{% endfor %}</div>{% endif %}
+                </div>
+                <div class="form-row">
+                    <div>
+                        {{ form.card_expiry.label(class="form-label") }}
+                        {{ form.card_expiry(class="form-control") }}
+                        {% if form.card_expiry.errors %}<div class="errors">{% for error in form.card_expiry.errors %}<small class="text-danger">{{ error }}</small><br>{% endfor %}</div>{% endif %}
+                    </div>
+                    <div>
+                        {{ form.card_cvv.label(class="form-label") }}
+                        {{ form.card_cvv(class="form-control") }}
+                        {% if form.card_cvv.errors %}<div class="errors">{% for error in form.card_cvv.errors %}<small class="text-danger">{{ error }}</small><br>{% endfor %}</div>{% endif %}
+                    </div>
+                </div>
+            </div>
+
+            <!-- E-Wallet Payment Details -->
+            <div id="ewallet-payment-details" class="payment-details-group hidden">
+                <h4>E-Wallet Information</h4>
+                <div>
+                    {{ form.ewallet_provider.label(class="form-label") }}
+                    {{ form.ewallet_provider(class="form-control form-select") }}
+                    {% if form.ewallet_provider.errors %}<div class="errors">{% for error in form.ewallet_provider.errors %}<small class="text-danger">{{ error }}</small><br>{% endfor %}</div>{% endif %}
+                </div>
+                <div>
+                    {{ form.ewallet_id.label(class="form-label") }}
+                    {{ form.ewallet_id(class="form-control") }}
+                    {% if form.ewallet_id.errors %}<div class="errors">{% for error in form.ewallet_id.errors %}<small class="text-danger">{{ error }}</small><br>{% endfor %}</div>{% endif %}
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            {{ form.submit(class="btn btn-lg btn-success") }}
+        </div>
+    </form>
+</div>
+{% endblock %}

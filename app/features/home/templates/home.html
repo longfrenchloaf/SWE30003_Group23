@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+{% block title %}Home - ART System{% endblock %}
+
+{% block content %}
+<section class="hero-section">
+    <div class="hero-content">
+        <h1>Welcome to ART System</h1> 
+        <p>Discover amazing merchandise, manage your tickets, and more!</p>
+        <a href="{{ url_for('order.buy_merchandise_bulk') }}" class="btn btn-primary btn-lg">Browse Merchandise</a>
+        <a href="{{ url_for('order.buy_ticket') }}" class="btn btn-secondary btn-lg">Buy a Ticket</a>
+    </div>
+</section>
+
+<section class="manage-booking-section">
+    <div class="container">
+        <div class="manage-booking-content">
+            <div class="manage-text">
+                <h2>Have an Existing Booking?</h2>
+                <p>Quickly access options to modify your trip or order.</p>
+            </div>
+            <div class="manage-actions">
+                <a href="{{ url_for('order.list_orders') }}" class="action-card">
+                    <i class="fas fa-receipt"></i>
+                    <span>View My Orders</span>
+                    <small>Check status & details</small>
+                </a>
+                 <a href="{{ url_for('order.reschedule_ticket_find') }}" class="action-card">
+                    <i class="fas fa-calendar-check"></i>
+                    <span>Reschedule Trip</span>
+                    <small>Change your dates</small>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container section-spacing">
+    <h2>Featured Merchandise</h2>
+    <div class="item-grid">
+        {% if sample_merch %}
+            {% for item in sample_merch %}
+            <div class="card fade-in-item">
+                <h3>{{ item.name }}</h3>
+                <p>{{ item.description[:100] }}...</p> {# Show a snippet of the description #}
+                <p><strong>Price:</strong> RM{{ "%.2f"|format(item.price) }}</p>
+                {# Removed stock display for a cleaner "featured" look, optional #}
+                {# <p><strong>Stock:</strong> {{ item.stockLevel }}</p> #}
+                
+                {# --- CHANGED BUTTON --- #}
+                <a href="{{ url_for('order.buy_merchandise_bulk') }}" class="btn btn-sm btn-info">View All Merchandise</a> 
+            </div>
+            {% endfor %}
+        {% else %}
+            <p>No featured merchandise available at the moment.</p>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

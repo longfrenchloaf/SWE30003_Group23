@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<div class="container card p-4 mt-4 shadow-sm">
+    <h2 class="mb-3 text-success"><i class="fas fa-check-circle me-2"></i>{{ title }}</h2>
+    <div class="alert alert-success">
+        Your ticket has been successfully rescheduled!
+    </div>
+
+    <p><strong>Order ID:</strong> {{ order_id }}</p>
+
+    <h4>New Ticket Details:</h4>
+    {% if new_ticket_details %}
+    <ul class="list-unstyled">
+        <li><strong>Route:</strong> {{ new_ticket_details.route }}</li>
+        <li><strong>Date:</strong> {{ new_ticket_details.date }}</li>
+        <li><strong>Time:</strong> {{ new_ticket_details.time }}</li>
+        <li><strong>Price:</strong> RM{{ "%.2f"|format(new_ticket_details.price) }}</li>
+        <li><strong>Trip ID:</strong> {{ new_ticket_details.id }}</li>
+    </ul>
+    {% else %}
+    <p>Details for the new ticket are not available.</p>
+    {% endif %}
+
+    <div class="mt-4">
+        <a href="{{ url_for('order.view_order', order_id=order_id) }}" class="btn btn-primary me-2"><i class="fas fa-eye me-1"></i>View Updated Order</a>
+        <a href="{{ url_for('home.index') }}" class="btn btn-secondary"><i class="fas fa-home me-1"></i>Back to Home</a>
+    </div>
+</div>
+{% endblock %}

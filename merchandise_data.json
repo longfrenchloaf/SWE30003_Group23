@@ -1,0 +1,44 @@
+[
+  {
+    "merchandiseID": "art001",
+    "name": "ART System Explorer Pass",
+    "description": "Ride all ART trains as much as you want for one whole day. See the city easily!",
+    "price": 25.0,
+    "stockLevel": 990
+  },
+  {
+    "merchandiseID": "art002",
+    "name": "ART Smart Journey Mug",
+    "description": "A special mug with a cool ART train design. Keeps your drinks hot or cold when you travel.",
+    "price": 18.5,
+    "stockLevel": 148
+  },
+  {
+    "merchandiseID": "art003",
+    "name": "Miniature ART Vehicle Replica",
+    "description": "A small model of our newest ART train. A nice toy or for show, great for fans!",
+    "price": 35.0,
+    "stockLevel": 61
+  },
+  {
+    "merchandiseID": "art004",
+    "name": "ART System Route Map Poster",
+    "description": "A cool A2 size poster showing all the ART train routes. Looks good on your wall and helps you find your way.",
+    "price": 12.99,
+    "stockLevel": 195
+  },
+  {
+    "merchandiseID": "art005",
+    "name": "ART 'Future of Transit' T-Shirt",
+    "description": "A comfy cotton t-shirt with a cool 'Future of Transit - ART' picture. Comes in sizes S, M, L, XL.",
+    "price": 22.0,
+    "stockLevel": 298
+  },
+  {
+    "merchandiseID": "art006",
+    "name": "ART Eco Travel Tote Bag",
+    "description": "A strong bag you can use many times, made from recycled stuff, with the ART logo. Good for daily trips and shopping.",
+    "price": 14.75,
+    "stockLevel": 240
+  }
+]

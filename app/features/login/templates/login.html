@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+{% block title %}Login - ART System{% endblock %}
+
+{% block content %}
+<div class="creative-login-wrapper">
+    <div class="creative-login-image-panel">
+        <div class="creative-login-image-content">
+            <h2>Welcome Back!</h2>
+            <p>Log in to access your ART System dashboard and manage your artistic journey with ease and style.</p>
+        </div>
+    </div>
+
+    <div class="creative-login-form-panel">
+        <div class="creative-login-form-container">
+            <form method="POST" action="{{ url_for('login.login_page') }}" novalidate>
+                {{ form.hidden_tag() }}
+                
+                <legend class="creative-login-legend">Login</legend>
+                
+                <div class="creative-form-group">
+                    {{ form.email.label(class="creative-form-label") }}
+                    {{ form.email(class="creative-form-input", placeholder="Enter your email address") }}
+                    {% if form.email.errors %}
+                        <div class="creative-login-errors">
+                            {% for error in form.email.errors %}<small><i class="fas fa-exclamation-circle me-1"></i>{{ error }}</small>{% endfor %}
+                        </div>
+                    {% endif %}
+                </div>
+                
+                <div class="creative-form-group">
+                    {{ form.password.label(class="creative-form-label") }}
+                    {{ form.password(class="creative-form-input", placeholder="Enter your password") }}
+                    {% if form.password.errors %}
+                        <div class="creative-login-errors">
+                            {% for error in form.password.errors %}<small><i class="fas fa-exclamation-circle me-1"></i>{{ error }}</small>{% endfor %}
+                        </div>
+                    {% endif %}
+                </div>
+                
+                <div class="creative-form-group">
+                    {{ form.submit(class="creative-submit-btn") }}
+                </div>
+                
+                <p class="creative-login-footer-link">
+                    Don't have an account? 
+                    <a href="{{ url_for('account.create_account_page') }}">Register here</a>.
+                </p>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

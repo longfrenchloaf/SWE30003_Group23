@@ -1,0 +1,96 @@
+{% extends "layout.html" %}
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<div class="buy-ticket-page"> {# Wrapper for page-specific styling #}
+    <div class="container order-form card mt-4 mb-4 p-4 shadow-sm"> {# Main page card #}
+        <h2 class="mb-4 page-title">{{ title }}</h2>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                        {{ message }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        {% if form.selected_trip_id.choices %}
+            <form method="POST" action="{{ url_for('order.buy_ticket') }}" id="buyTicketForm">
+                {{ form.hidden_tag() }}
+
+                <div class="form-section mb-4">
+                    <h3><i class="fas fa-route me-2 text-primary"></i>Available Trips</h3>
+                    {% if form.selected_trip_id.errors %}
+                        <ul class="errors text-danger list-unstyled">
+                            {% for error in form.selected_trip_id.errors %}<li><small><i class="fas fa-exclamation-circle me-1"></i>{{ error }}</small></li>{% endfor %}
+                        </ul>
+                    {% endif %}
+                    <p class="text-muted small mb-3">Select a trip to proceed with your booking.</p>
+                    <div class="list-group trip-selection-list">
+                        {% for subfield in form.selected_trip_id %}
+                            <label class="list-group-item list-group-item-action d-flex justify-content-between align-items-center trip-option">
+                                <span class="trip-details">
+                                    {{ subfield(class="form-check-input me-3 visually-hidden", id="trip_" + subfield.id) }} 
+                                    {% set parts = subfield.label.text.split(' - ') %}
+                                    <span class="trip-route fw-bold">{{ parts[0] }}</span><br>
+                                    <small class="trip-time text-muted"><i class="fas fa-clock me-1"></i>{{ parts[1] if parts|length > 1 else 'N/A' }}</small>
+                                </span>
+                                <span class="selection-indicator">
+                                    <i class="fas fa-check-circle"></i>
+                                </span>
+                            </label>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="form-section mb-4">
+                    <h3><i class="fas fa-credit-card me-2 text-primary"></i>Payment (Simulated)</h3>
+                    <p class="alert alert-info small"><i class="fas fa-info-circle me-1"></i> Select a payment method. No real transaction will occur.</p>
+                    {% if form.payment_type.errors %}
+                        <div class="errors text-danger mb-2">
+                            {% for error in form.payment_type.errors %}<small><i class="fas fa-exclamation-circle me-1"></i>{{ error }}</small><br>{% endfor %}
+                        </div>
+                    {% endif %}
+                    <div class="payment-options">
+                        {% for subfield in form.payment_type %}
+                        <div class="form-check form-check-inline">
+                            {{ subfield(class="form-check-input", id="ticket_payment_" + subfield.id) }} {# Ensure unique IDs if merch page is similar #}
+                            <label class="form-check-label" for="{{ "ticket_payment_" + subfield.id }}">
+                                {% if subfield.data == 'card' %}<i class="fas fa-credit-card me-1"></i>
+                                {% elif subfield.data == 'ewallet' %}<i class="fas fa-wallet me-1"></i>
+                                {% endif %}
+                                {{ subfield.label.text }}
+                            </label>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="text-center"> {# Centering the submit button container #}
+                    <button type="submit" class="btn btn-lg btn-success">
+                        <i class="fas fa-ticket-alt me-2"></i>{{ form.submit.label.text if form.submit.label else 'Buy Ticket & Pay' }}
+                    </button>
+                </div>
+            </form>
+        {% else %}
+            {% set has_warning_flash = false %}
+            {% for category, message in get_flashed_messages(with_categories=true) %}
+                {% if category == 'warning' %}{% set has_warning_flash = true %}{% endif %}
+            {% endfor %}
+
+            {% if not has_warning_flash %}
+                <div class="text-center py-5">
+                    <i class="fas fa- поезд-circle-exclamation fa-3x text-warning mb-3"></i>
+                    <i class="fas fa-exclamation-triangle fa-3x text-warning mb-3"></i>
+                    <p class="alert alert-warning d-inline-block">No trips are currently available for booking. Please check back later.</p>
+                </div>
+            {% endif %}
+            <div class="text-center mt-3">
+                 <a href="{{ url_for('home.index') }}" class="btn btn-secondary">Back to Home</a>
+            </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

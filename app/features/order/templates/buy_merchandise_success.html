@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<div class="container card p-4 mt-4 shadow-sm">
+    <h2 class="mb-3 text-success"><i class="fas fa-check-circle me-2"></i>{{ title }}</h2>
+    <div class="alert alert-success">
+        Your merchandise order has been placed successfully!
+    </div>
+
+    <p><strong>Order ID:</strong>{{ order.orderID }}</p>
+
+    <h4>Purchased Items:</h4>
+    {% if purchased_items_sli %}
+        <ul class="list-group mb-3">
+        {% for item_sli in purchased_items_sli %} {# purchased_items_sli is a list of SLI dictionaries #}
+            <li class="list-group-item">
+                {{ item_sli['quantity'] }} x <strong>{{ item_sli['item_name'] }}</strong> 
+                (Unit Price: RM{{ "%.2f"|format(item_sli['unit_price']) }}, Subtotal: RM{{ "%.2f"|format(item_sli['lineTotal']) }})
+            </li>
+        {% endfor %}
+        </ul>
+        <p><strong>Order Total:</strong> RM{{ "%.2f"|format(total_amount) }}</p>
+    {% else %}
+        <p>No items were processed in this order.</p>
+    {% endif %}
+
+    <div class="mt-4">
+        <a href="{{ url_for('order.view_order', order_id=order_id) }}" class="btn btn-primary me-2"><i class="fas fa-eye me-1"></i>View Full Order</a>
+        <a href="{{ url_for('order.buy_merchandise_bulk') }}" class="btn btn-info me-2"><i class="fas fa-shopping-bag me-1"></i>Order More Merchandise</a>
+        <a href="{{ url_for('home.index') }}" class="btn btn-secondary"><i class="fas fa-home me-1"></i>Back to Home</a>
+    </div>
+</div>
+{% endblock %}

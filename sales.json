@@ -1,0 +1,3577 @@
+[
+  {
+    "orderID": "ORD1001",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "slid0944b08",
+        "item_id": "tkt7cdd359e",
+        "item_type": "ticket",
+        "item_name": "[RESCHEDULED] Ticket for trip (Seat: A20)",
+        "quantity": 1,
+        "unit_price": 6.0,
+        "lineTotal": 6.0,
+        "line_item_status": "CANCELLED"
+      },
+      {
+        "lineItemID": "sli1f1c149a",
+        "item_id": "tkt0c8f2922",
+        "item_type": "ticket",
+        "item_name": "Ticket for trip (Seat: B12)",
+        "quantity": 1,
+        "unit_price": 6.0,
+        "lineTotal": 6.0,
+        "line_item_status": "CANCELLED"
+      }
+    ],
+    "totalAmount": 6.0,
+    "payment": {
+      "paymentID": "pay75d8895c",
+      "relatedOrderID": "ORD1001",
+      "amount": 6.0,
+      "timestamp": "2025-05-30T17:34:36.234474+00:00",
+      "paymentMethodDetails": "Simulated Card",
+      "paymentStatus": "REFUNDED"
+    },
+    "status": "CANCELLED",
+    "cancellationRequests": [
+      "Cancellation requested by user on 2025-05-31T11:50:58.065795+00:00"
+    ],
+    "refundRequests": [
+      "Refund for 6.0 requested on 2025-05-31T11:50:58.065795+00:00 due to: User cancellation request for paid order with active items"
+    ],
+    "orderTimestamp": "2025-05-30T17:34:36.233474+00:00"
+  },
+  {
+    "orderID": "ORD1002",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli794240b7",
+        "item_id": "tkt3a28c81d",
+        "item_type": "ticket",
+        "item_name": "[RESCHEDULED] Ticket for tri (Seat: A2)",
+        "quantity": 1,
+        "unit_price": 2.0,
+        "lineTotal": 2.0,
+        "line_item_status": "RESCHEDULED"
+      },
+      {
+        "lineItemID": "sli38683850",
+        "item_id": "tkteee7f4bf",
+        "item_type": "ticket",
+        "item_name": "[RESCHEDULED] Ticket for tri (Seat: A6)",
+        "quantity": 1,
+        "unit_price": 2.0,
+        "lineTotal": 2.0,
+        "line_item_status": "RESCHEDULED"
+      },
+      {
+        "lineItemID": "sli8133ff00",
+        "item_id": "tkt57ab1511",
+        "item_type": "ticket",
+        "item_name": "[RESCHEDULED] Ticket for tri (Seat: A22)",
+        "quantity": 1,
+        "unit_price": 2.0,
+        "lineTotal": 2.0,
+        "line_item_status": "RESCHEDULED"
+      },
+      {
+        "lineItemID": "sli6173ced2",
+        "item_id": "tkt3467573f",
+        "item_type": "ticket",
+        "item_name": "Ticket for tri (Seat: B9)",
+        "quantity": 1,
+        "unit_price": 2.0,
+        "lineTotal": 2.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 2.0,
+    "payment": {
+      "paymentID": "paycbe92d8d",
+      "relatedOrderID": "ORD1002",
+      "amount": 2.0,
+      "timestamp": "2025-05-30T18:06:33.888708+00:00",
+      "paymentMethodDetails": "Simulated Card",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-05-30T18:06:33.887690+00:00"
+  },
+  {
+    "orderID": "ORD1003",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli70085762",
+        "item_id": "merch001",
+        "item_type": "merchandise",
+        "item_name": "Trail Map Pro",
+        "quantity": 1,
+        "unit_price": 15.99,
+        "lineTotal": 15.99
+      }
+    ],
+    "totalAmount": 15.99,
+    "payment": {
+      "paymentID": "pay5d5e96a9",
+      "relatedOrderID": "ORD1003",
+      "amount": 15.99,
+      "timestamp": "2025-05-30T18:11:21.729385+00:00",
+      "paymentMethodDetails": "Simulated Card",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-05-30T18:11:21.728385+00:00"
+  },
+  {
+    "orderID": "ORD1004",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli93ad3930",
+        "item_id": "tkta36c84ed",
+        "item_type": "ticket",
+        "item_name": "[RESCHEDULED] Ticket for tri (Seat: A2)",
+        "quantity": 1,
+        "unit_price": 2.0,
+        "lineTotal": 2.0,
+        "line_item_status": "RESCHEDULED"
+      },
+      {
+        "lineItemID": "sli4401f997",
+        "item_id": "tktce13568c",
+        "item_type": "ticket",
+        "item_name": "Ticket for tri (Seat: A11)",
+        "quantity": 1,
+        "unit_price": 2.0,
+        "lineTotal": 2.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 4.0,
+    "payment": {
+      "paymentID": "pay63ea5d3e",
+      "relatedOrderID": "ORD1004",
+      "amount": 2.0,
+      "timestamp": "2025-05-30T18:33:47.671261+00:00",
+      "paymentMethodDetails": "Simulated Payment (Paid Later)",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-05-30T18:26:23.835553+00:00"
+  },
+  {
+    "orderID": "ORD1005",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "slif103e4bc",
+        "item_id": "tkte0c68d8d",
+        "item_type": "ticket",
+        "item_name": "Ticket for tri (Seat: 1)",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0
+      }
+    ],
+    "totalAmount": 5.0,
+    "payment": null,
+    "status": "PENDING_PAYMENT",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-05-30T18:55:04.337670+00:00"
+  },
+  {
+    "orderID": "ORD1006",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli989fbf4b",
+        "item_id": "tkt046a6e82",
+        "item_type": "ticket",
+        "item_name": "[RESCHEDULED] Ticket for Bintulu (Seat: A13)",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "RESCHEDULED"
+      },
+      {
+        "lineItemID": "slidc9e53f3",
+        "item_id": "tktb6af4e63",
+        "item_type": "ticket",
+        "item_name": "Ticket for Bintulu (Seat: A15)",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 10.0,
+    "payment": {
+      "paymentID": "payc08dfbac",
+      "relatedOrderID": "ORD1006",
+      "amount": 5.0,
+      "timestamp": "2025-05-31T10:23:08.454491+00:00",
+      "paymentMethodDetails": "Simulated Card",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-05-31T10:23:08.454491+00:00"
+  },
+  {
+    "orderID": "ORD1007",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli6404c2f7",
+        "item_id": "tktfe5c2ebf",
+        "item_type": "ticket",
+        "item_name": "[RESCHEDULED] Ticket for Sabah (Seat: A9)",
+        "quantity": 1,
+        "unit_price": 3.0,
+        "lineTotal": 3.0,
+        "line_item_status": "RESCHEDULED"
+      },
+      {
+        "lineItemID": "slib9d00468",
+        "item_id": "tkt8481534e",
+        "item_type": "ticket",
+        "item_name": "Ticket for Sabah (Seat: B19)",
+        "quantity": 1,
+        "unit_price": 3.0,
+        "lineTotal": 3.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 6.0,
+    "payment": {
+      "paymentID": "payb4c3bb7c",
+      "relatedOrderID": "ORD1007",
+      "amount": 3.0,
+      "timestamp": "2025-05-31T10:26:48.665170+00:00",
+      "paymentMethodDetails": "Simulated Card",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-05-31T10:26:48.664191+00:00"
+  },
+  {
+    "orderID": "ORD1008",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "slib8352fc0",
+        "item_id": "tkt4d31a059",
+        "item_type": "ticket",
+        "item_name": "[RESCHEDULED] Ticket for KL (Seat: A16)",
+        "quantity": 1,
+        "unit_price": 33.0,
+        "lineTotal": 33.0,
+        "line_item_status": "CANCELLED"
+      },
+      {
+        "lineItemID": "sli07c731d9",
+        "item_id": "tktbfd92de4",
+        "item_type": "ticket",
+        "item_name": "Ticket for KL (Seat: A20)",
+        "quantity": 1,
+        "unit_price": 33.0,
+        "lineTotal": 33.0,
+        "line_item_status": "CANCELLED"
+      }
+    ],
+    "totalAmount": 0.0,
+    "payment": {
+      "paymentID": "payda1eb03a",
+      "relatedOrderID": "ORD1008",
+      "amount": 33.0,
+      "timestamp": "2025-05-31T10:32:44.703959+00:00",
+      "paymentMethodDetails": "Simulated Card",
+      "paymentStatus": "REFUNDED"
+    },
+    "status": "CANCELLED",
+    "cancellationRequests": [
+      "Cancellation requested by user on 2025-05-31T13:32:57.287322+00:00"
+    ],
+    "refundRequests": [
+      "Refund for 33.0 requested on 2025-05-31T13:32:57.287322+00:00 due to: User cancellation request for paid order with active items"
+    ],
+    "orderTimestamp": "2025-05-31T10:32:44.702961+00:00"
+  },
+  {
+    "orderID": "ORD1009",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli68574a7b",
+        "item_id": "tkt2b48bcef",
+        "item_type": "ticket",
+        "item_name": "[RESCHEDULED] Ticket for KL (Seat: A13)",
+        "quantity": 1,
+        "unit_price": 6.0,
+        "lineTotal": 6.0,
+        "line_item_status": "RESCHEDULED"
+      },
+      {
+        "lineItemID": "sli52c8a36f",
+        "item_id": "tkte3e27803",
+        "item_type": "ticket",
+        "item_name": "Ticket for KL (Seat: A20)",
+        "quantity": 1,
+        "unit_price": 6.0,
+        "lineTotal": 6.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 12.0,
+    "payment": {
+      "paymentID": "pay95675abe",
+      "relatedOrderID": "ORD1009",
+      "amount": 6.0,
+      "timestamp": "2025-05-31T10:38:43.992950+00:00",
+      "paymentMethodDetails": "Simulated Card",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-05-31T10:38:43.991952+00:00"
+  },
+  {
+    "orderID": "ORD1010",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli82cd2d29",
+        "item_id": "tktb6e521e5",
+        "item_type": "ticket",
+        "item_name": "[RESCHEDULED] Ticket for Bintulu (Seat: A13)",
+        "quantity": 1,
+        "unit_price": 3.0,
+        "lineTotal": 3.0,
+        "line_item_status": "CANCELLED"
+      },
+      {
+        "lineItemID": "sli1ad854b7",
+        "item_id": "tkt828ef4f6",
+        "item_type": "ticket",
+        "item_name": "Ticket for Bintulu (Seat: B6)",
+        "quantity": 1,
+        "unit_price": 3.0,
+        "lineTotal": 3.0,
+        "line_item_status": "CANCELLED"
+      }
+    ],
+    "totalAmount": 0.0,
+    "payment": {
+      "paymentID": "pay4cc3e05f",
+      "relatedOrderID": "ORD1010",
+      "amount": 3.0,
+      "timestamp": "2025-05-31T10:45:28.971578+00:00",
+      "paymentMethodDetails": "Simulated Card",
+      "paymentStatus": "REFUNDED"
+    },
+    "status": "CANCELLED",
+    "cancellationRequests": [
+      "Cancellation requested by user on 2025-05-31T10:49:48.089502+00:00"
+    ],
+    "refundRequests": [
+      "Refund for 3.0 requested on 2025-05-31T10:49:48.089502+00:00 due to: User cancellation request for paid order with active items"
+    ],
+    "orderTimestamp": "2025-05-31T10:45:28.971058+00:00"
+  },
+  {
+    "orderID": "ORD1011",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sliab7a4652",
+        "item_id": "tkt1695f84d",
+        "item_type": "ticket",
+        "item_name": "[RESCHEDULED] Ticket for Bintulu (Seat: A8)",
+        "quantity": 1,
+        "unit_price": 17.0,
+        "lineTotal": 17.0,
+        "line_item_status": "RESCHEDULED"
+      },
+      {
+        "lineItemID": "slibc5902a3",
+        "item_id": "tkt5c88529a",
+        "item_type": "ticket",
+        "item_name": "Ticket for Bintulu (Seat: B6)",
+        "quantity": 1,
+        "unit_price": 17.0,
+        "lineTotal": 17.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 34.0,
+    "payment": {
+      "paymentID": "pay9625d34f",
+      "relatedOrderID": "ORD1011",
+      "amount": 17.0,
+      "timestamp": "2025-05-31T10:50:17.222979+00:00",
+      "paymentMethodDetails": "Simulated Card",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-05-31T10:50:17.222979+00:00"
+  },
+  {
+    "orderID": "ORD1012",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "slic9fea27b",
+        "item_id": "tkt6e594cce",
+        "item_type": "ticket",
+        "item_name": "[RESCHEDULED] Ticket for Bintulu (Seat: A8)",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "RESCHEDULED"
+      },
+      {
+        "lineItemID": "sli9b3f1faa",
+        "item_id": "tktb2a98671",
+        "item_type": "ticket",
+        "item_name": "Ticket for Bintulu (Seat: A20)",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 5.0,
+    "payment": {
+      "paymentID": "pay11e17585",
+      "relatedOrderID": "ORD1012",
+      "amount": 5.0,
+      "timestamp": "2025-05-31T10:53:18.796926+00:00",
+      "paymentMethodDetails": "Simulated Card",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-05-31T10:53:18.795931+00:00"
+  },
+  {
+    "orderID": "ORD1013",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli61f901ef",
+        "item_id": "merch001",
+        "item_type": "merchandise",
+        "item_name": "Trail Map Pro",
+        "quantity": 1,
+        "unit_price": 15.99,
+        "lineTotal": 15.99,
+        "line_item_status": "CANCELLED"
+      }
+    ],
+    "totalAmount": 0.0,
+    "payment": {
+      "paymentID": "payb2bc3b8b",
+      "relatedOrderID": "ORD1013",
+      "amount": 15.99,
+      "timestamp": "2025-05-31T12:25:14.586451+00:00",
+      "paymentMethodDetails": "Simulated Payment (Paid Later)",
+      "paymentStatus": "REFUNDED"
+    },
+    "status": "CANCELLED",
+    "cancellationRequests": [
+      "Cancellation requested by user on 2025-05-31T13:27:16.581347+00:00"
+    ],
+    "refundRequests": [
+      "Refund for 15.99 requested on 2025-05-31T13:27:16.582375+00:00 due to: User cancellation request for paid order with active items"
+    ],
+    "orderTimestamp": "2025-05-31T12:25:04.987513+00:00"
+  },
+  {
+    "orderID": "ORD1015",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sliff9cabef",
+        "item_id": "tkt47863657",
+        "item_type": "ticket",
+        "item_name": "Ticket for MY (Seat: A11)",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 5.0,
+    "payment": {
+      "paymentID": "pay5b7c8b2a",
+      "relatedOrderID": "ORD1015",
+      "amount": 5.0,
+      "timestamp": "2025-05-31T13:42:49.294306+00:00",
+      "paymentMethodDetails": "Simulated Card",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-05-31T13:42:49.293311+00:00"
+  },
+  {
+    "orderID": "ORD1016",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli1346d8d3",
+        "item_id": "tktd8881f73",
+        "item_type": "ticket",
+        "item_name": "Ticket for Sabah (Seat: A9)",
+        "quantity": 1,
+        "unit_price": 3.0,
+        "lineTotal": 3.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 3.0,
+    "payment": {
+      "paymentID": "pay6563aea3",
+      "relatedOrderID": "ORD1016",
+      "amount": 3.0,
+      "timestamp": "2025-05-31T13:50:32.808017+00:00",
+      "paymentMethodDetails": "Simulated Card",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-05-31T13:50:32.808017+00:00"
+  },
+  {
+    "orderID": "ORD1017",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli9332e77c",
+        "item_id": "art001",
+        "item_type": "merchandise",
+        "item_name": "ART System Explorer Pass",
+        "quantity": 1,
+        "unit_price": 25.0,
+        "lineTotal": 25.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 25.0,
+    "payment": {
+      "paymentID": "pay08c2be7e",
+      "relatedOrderID": "ORD1017",
+      "amount": 25.0,
+      "timestamp": "2025-05-31T14:28:59.365222+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-05-31T14:28:59.365222+00:00"
+  },
+  {
+    "orderID": "ORD1018",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "slie40ee8b8",
+        "item_id": "art001",
+        "item_type": "merchandise",
+        "item_name": "ART System Explorer Pass",
+        "quantity": 1,
+        "unit_price": 25.0,
+        "lineTotal": 25.0,
+        "line_item_status": "CANCELLED"
+      }
+    ],
+    "totalAmount": 0.0,
+    "payment": {
+      "paymentID": "pay922af866",
+      "relatedOrderID": "ORD1018",
+      "amount": 25.0,
+      "paymentTimestamp": "2025-06-01T10:08:17.905480+00:00",
+      "paymentMethodDetails": "Simulated Card",
+      "paymentStatus": "REFUNDED"
+    },
+    "status": "CANCELLED",
+    "cancellationRequests": [],
+    "refundRequests": [
+      "Refund for 25.0 processed on 2025-06-01T10:10:54.592335+00:00 due to: User cancellation request for order with previously active items."
+    ],
+    "orderTimestamp": "2025-06-01T10:08:17.905456+00:00"
+  },
+  {
+    "orderID": "ORD1019",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "slib66d8260",
+        "item_id": "art001",
+        "item_type": "merchandise",
+        "item_name": "ART System Explorer Pass",
+        "quantity": 1,
+        "unit_price": 25.0,
+        "lineTotal": 25.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 25.0,
+    "payment": {
+      "paymentID": "payf4a5f3ce",
+      "relatedOrderID": "ORD1019",
+      "amount": 25.0,
+      "paymentTimestamp": "2025-06-01T10:11:54.524911+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-01T10:11:54.524886+00:00"
+  },
+  {
+    "orderID": "ORD1020",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli60c48dd8",
+        "item_id": "art001",
+        "item_type": "merchandise",
+        "item_name": "ART System Explorer Pass",
+        "quantity": 1,
+        "unit_price": 25.0,
+        "lineTotal": 25.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 25.0,
+    "payment": {
+      "paymentID": "pay4bf783bf",
+      "relatedOrderID": "ORD1020",
+      "amount": 25.0,
+      "paymentTimestamp": "2025-06-01T10:17:52.862340+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-01T10:17:52.862314+00:00"
+  },
+  {
+    "orderID": "ORD1021",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli8a0c7466",
+        "item_id": "TRP002",
+        "item_type": "ticket",
+        "item_name": "Ticket: Downtown Loop - 2024-07-15 2:00 PM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 5.0,
+    "payment": {
+      "paymentID": "pay7241525a",
+      "relatedOrderID": "ORD1021",
+      "amount": 5.0,
+      "paymentTimestamp": "2025-06-01T10:17:57.444655+00:00",
+      "paymentMethodDetails": "Simulated Card",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-01T10:17:57.444574+00:00"
+  },
+  {
+    "orderID": "ORD1022",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "slia0ad564e",
+        "item_id": "TRP004",
+        "item_type": "ticket",
+        "item_name": "Ticket: City Highlights - 2024-07-17 09:00 AM",
+        "quantity": 1,
+        "unit_price": 10.0,
+        "lineTotal": 10.0,
+        "line_item_status": "CANCELLED"
+      }
+    ],
+    "totalAmount": 0.0,
+    "payment": {
+      "paymentID": "payc0f5e31d",
+      "relatedOrderID": "ORD1022",
+      "amount": 10.0,
+      "paymentTimestamp": "2025-06-01T10:25:16.078938+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "REFUNDED"
+    },
+    "status": "CANCELLED",
+    "cancellationRequests": [],
+    "refundRequests": [
+      "Refund for 10.0 processed on 2025-06-01T10:25:52.375817+00:00 due to: User cancellation request for order with previously active items."
+    ],
+    "orderTimestamp": "2025-06-01T10:25:16.078835+00:00"
+  },
+  {
+    "orderID": "ORD1023",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli42f36af2",
+        "item_id": "art006",
+        "item_type": "merchandise",
+        "item_name": "ART Eco Travel Tote Bag",
+        "quantity": 2,
+        "unit_price": 14.75,
+        "lineTotal": 29.5,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 29.5,
+    "payment": {
+      "paymentID": "pay2de19b86",
+      "relatedOrderID": "ORD1023",
+      "amount": 29.5,
+      "paymentTimestamp": "2025-06-01T10:42:36.652111+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-01T10:42:36.652084+00:00"
+  },
+  {
+    "orderID": "ORD1024",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli08c66589",
+        "item_id": "art003",
+        "item_type": "merchandise",
+        "item_name": "Miniature ART Vehicle Replica",
+        "quantity": 2,
+        "unit_price": 35.0,
+        "lineTotal": 70.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 70.0,
+    "payment": {
+      "paymentID": "paye388cc83",
+      "relatedOrderID": "ORD1024",
+      "amount": 70.0,
+      "paymentTimestamp": "2025-06-01T10:44:58.521642+00:00",
+      "paymentMethodDetails": "Simulated Card",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-01T10:44:58.521618+00:00"
+  },
+  {
+    "orderID": "ORD1025",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "slic45eb5be",
+        "item_id": "art002",
+        "item_type": "merchandise",
+        "item_name": "ART Smart Journey Mug",
+        "quantity": 2,
+        "unit_price": 18.5,
+        "lineTotal": 37.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 37.0,
+    "payment": {
+      "paymentID": "pay501b4a7d",
+      "relatedOrderID": "ORD1025",
+      "amount": 37.0,
+      "paymentTimestamp": "2025-06-01T10:54:29.544372+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-01T10:54:29.544325+00:00"
+  },
+  {
+    "orderID": "ORD1026",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli3230dac2",
+        "item_id": "art003",
+        "item_type": "merchandise",
+        "item_name": "Miniature ART Vehicle Replica",
+        "quantity": 1,
+        "unit_price": 35.0,
+        "lineTotal": 35.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 35.0,
+    "payment": {
+      "paymentID": "payc326181b",
+      "relatedOrderID": "ORD1026",
+      "amount": 35.0,
+      "paymentTimestamp": "2025-06-01T11:07:18.590962+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-01T11:07:18.590930+00:00"
+  },
+  {
+    "orderID": "ORD1027",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli43c2fb07",
+        "item_id": "art001",
+        "item_type": "merchandise",
+        "item_name": "ART System Explorer Pass",
+        "quantity": 3,
+        "unit_price": 25.0,
+        "lineTotal": 75.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 75.0,
+    "payment": {
+      "paymentID": "pay2bad08ba",
+      "relatedOrderID": "ORD1027",
+      "amount": 75.0,
+      "paymentTimestamp": "2025-06-01T11:22:42.428213+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-01T11:22:42.428189+00:00"
+  },
+  {
+    "orderID": "ORD1028",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli83010390",
+        "item_id": "art001",
+        "item_type": "merchandise",
+        "item_name": "ART System Explorer Pass",
+        "quantity": 1,
+        "unit_price": 25.0,
+        "lineTotal": 25.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 25.0,
+    "payment": {
+      "paymentID": "pay39622d44",
+      "relatedOrderID": "ORD1028",
+      "amount": 25.0,
+      "timestamp": "2025-06-01T11:29:07.410369+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-01T11:29:07.410369+00:00"
+  },
+  {
+    "orderID": "ORD1029",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli5b5ae5dd",
+        "item_id": "TRP004",
+        "item_type": "ticket",
+        "item_name": "Ticket: City Highlights - 2024-07-17 09:00 AM",
+        "quantity": 1,
+        "unit_price": 10.0,
+        "lineTotal": 10.0,
+        "line_item_status": "CANCELLED"
+      }
+    ],
+    "totalAmount": 0.0,
+    "payment": {
+      "paymentID": "payd4fc2485",
+      "relatedOrderID": "ORD1029",
+      "amount": 10.0,
+      "timestamp": "2025-06-01T11:34:09.908141+00:00",
+      "paymentMethodDetails": "Simulated Card",
+      "paymentStatus": "REFUNDED"
+    },
+    "status": "CANCELLED",
+    "cancellationRequests": [],
+    "refundRequests": [
+      "Refund for 10.0 processed on 2025-06-01T15:55:42.945791+00:00 due to: User cancellation request for order with previously active items."
+    ],
+    "orderTimestamp": "2025-06-01T11:34:09.908141+00:00"
+  },
+  {
+    "orderID": "ORD1030",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "slib5035c37",
+        "item_id": "TRP001",
+        "item_type": "ticket",
+        "item_name": "Ticket: Downtown Loop - 2024-07-15 10:00 AM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "RESCHEDULED"
+      },
+      {
+        "lineItemID": "sli134ff3b0",
+        "item_id": "TRP002",
+        "item_type": "ticket",
+        "item_name": "Ticket: Downtown Loop - 2024-07-15 2:00 PM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 5.0,
+    "payment": {
+      "paymentID": "pay7b0313e7",
+      "relatedOrderID": "ORD1030",
+      "amount": 5.0,
+      "timestamp": "2025-06-01T11:35:26.240658+00:00",
+      "paymentMethodDetails": "Simulated Card",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-01T11:35:26.240658+00:00"
+  },
+  {
+    "orderID": "ORD1031",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli4c8e85e3",
+        "item_id": "TRP001",
+        "item_type": "ticket",
+        "item_name": "Ticket: Downtown Loop - 2024-07-15 10:00 AM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "RESCHEDULED"
+      },
+      {
+        "lineItemID": "sli12127423",
+        "item_id": "TRP002",
+        "item_type": "ticket",
+        "item_name": "Ticket: Downtown Loop - 2024-07-15 2:00 PM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "RESCHEDULED"
+      },
+      {
+        "lineItemID": "sli64dad8fa",
+        "item_id": "TRP001",
+        "item_type": "ticket",
+        "item_name": "Ticket: Downtown Loop - 2024-07-15 10:00 AM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "CANCELLED"
+      }
+    ],
+    "totalAmount": 0.0,
+    "payment": {
+      "paymentID": "pay2e5477e5",
+      "relatedOrderID": "ORD1031",
+      "amount": 5.0,
+      "timestamp": "2025-06-01T15:56:13.294977+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "REFUNDED"
+    },
+    "status": "CANCELLED",
+    "cancellationRequests": [],
+    "refundRequests": [
+      "Refund for 5.0 processed on 2025-06-01T16:08:46.343881+00:00 due to: User cancellation request for order with previously active items."
+    ],
+    "orderTimestamp": "2025-06-01T15:56:13.294977+00:00"
+  },
+  {
+    "orderID": "ORD1032",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli4511e8ff",
+        "item_id": "art001",
+        "item_type": "merchandise",
+        "item_name": "ART System Explorer Pass",
+        "quantity": 2,
+        "unit_price": 25.0,
+        "lineTotal": 50.0,
+        "line_item_status": "CANCELLED"
+      },
+      {
+        "lineItemID": "sliead31355",
+        "item_id": "art004",
+        "item_type": "merchandise",
+        "item_name": "ART System Route Map Poster",
+        "quantity": 1,
+        "unit_price": 12.99,
+        "lineTotal": 12.99,
+        "line_item_status": "CANCELLED"
+      },
+      {
+        "lineItemID": "slife635f08",
+        "item_id": "art006",
+        "item_type": "merchandise",
+        "item_name": "ART Eco Travel Tote Bag",
+        "quantity": 1,
+        "unit_price": 14.75,
+        "lineTotal": 14.75,
+        "line_item_status": "CANCELLED"
+      }
+    ],
+    "totalAmount": 0.0,
+    "payment": {
+      "paymentID": "paya7b4bf7b",
+      "relatedOrderID": "ORD1032",
+      "amount": 77.74000000000001,
+      "timestamp": "2025-06-01T16:09:00.325080+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "REFUNDED"
+    },
+    "status": "CANCELLED",
+    "cancellationRequests": [],
+    "refundRequests": [
+      "Refund for 77.74000000000001 processed on 2025-06-01T16:09:31.606656+00:00 due to: User cancellation request for order with previously active items."
+    ],
+    "orderTimestamp": "2025-06-01T16:09:00.325080+00:00"
+  },
+  {
+    "orderID": "ORD1033",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli3a6203e8",
+        "item_id": "TRP005",
+        "item_type": "ticket",
+        "item_name": "Ticket: Evening Lights - 2024-07-17 07:00 PM",
+        "quantity": 1,
+        "unit_price": 8.0,
+        "lineTotal": 8.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 8.0,
+    "payment": {
+      "paymentID": "pay44fc36e6",
+      "relatedOrderID": "ORD1033",
+      "amount": 8.0,
+      "timestamp": "2025-06-01T17:31:00.182695+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-01T17:31:00.182695+00:00"
+  },
+  {
+    "orderID": "ORD33e696b0",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "slie8b67f94",
+        "item_id": "TRP002",
+        "item_type": "ticket",
+        "item_name": "Ticket: Downtown Loop - 2024-07-15 2:00 PM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 5.0,
+    "payment": {
+      "paymentID": "pay57b9f526",
+      "relatedOrderID": "ORD33e696b0",
+      "amount": 5.0,
+      "timestamp": "2025-06-01T17:59:55.301080+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-01T17:59:55.299883+00:00"
+  },
+  {
+    "orderID": "ORD8b365cf1",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "slid494e54f",
+        "item_id": "TRP002",
+        "item_type": "ticket",
+        "item_name": "Ticket: Downtown Loop - 2024-07-15 2:00 PM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 5.0,
+    "payment": {
+      "paymentID": "pay9bd358eb",
+      "relatedOrderID": "ORD8b365cf1",
+      "amount": 5.0,
+      "timestamp": "2025-06-01T17:59:59.399852+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-01T17:59:59.399852+00:00"
+  },
+  {
+    "orderID": "ORD1034",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli07297baa",
+        "item_id": "TRP002",
+        "item_type": "ticket",
+        "item_name": "Ticket: Downtown Loop - 2024-07-15 2:00 PM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 5.0,
+    "payment": {
+      "paymentID": "pay4b9e6a79",
+      "relatedOrderID": "ORD1034",
+      "amount": 5.0,
+      "timestamp": "2025-06-01T18:01:46.752957+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-01T18:01:46.752957+00:00"
+  },
+  {
+    "orderID": "ORD1035",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli75476933",
+        "item_id": "TRP004",
+        "item_type": "ticket",
+        "item_name": "Ticket: City Highlights - 2024-07-17 09:00 AM",
+        "quantity": 1,
+        "unit_price": 10.0,
+        "lineTotal": 10.0,
+        "line_item_status": "CANCELLED"
+      }
+    ],
+    "totalAmount": 0.0,
+    "payment": {
+      "paymentID": "payd880afdc",
+      "relatedOrderID": "ORD1035",
+      "amount": 10.0,
+      "timestamp": "2025-06-01T18:01:53.934521+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "REFUNDED"
+    },
+    "status": "CANCELLED",
+    "cancellationRequests": [
+      "Cancellation requested by user on 2025-06-01T18:10:59.373348+00:00"
+    ],
+    "refundRequests": [
+      "Refund for 10.0 requested on 2025-06-01T18:10:59.373348+00:00 due to: User cancellation request for paid order with active items"
+    ],
+    "orderTimestamp": "2025-06-01T18:01:53.934521+00:00"
+  },
+  {
+    "orderID": "ORD372bc148",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli89013a7d",
+        "item_id": "TRP002",
+        "item_type": "ticket",
+        "item_name": "Ticket: Downtown Loop - 2024-07-15 2:00 PM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 5.0,
+    "payment": {
+      "paymentID": "payb42e11a1",
+      "relatedOrderID": "ORD372bc148",
+      "amount": 5.0,
+      "timestamp": "2025-06-01T18:02:27.520748+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-01T18:02:27.520748+00:00"
+  },
+  {
+    "orderID": "ORD97f1b8fb",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "slida959c9b",
+        "item_id": "TRP002",
+        "item_type": "ticket",
+        "item_name": "Ticket: Downtown Loop - 2024-07-15 2:00 PM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 5.0,
+    "payment": {
+      "paymentID": "pay83606a78",
+      "relatedOrderID": "ORD97f1b8fb",
+      "amount": 5.0,
+      "timestamp": "2025-06-01T18:04:56.668094+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-01T18:04:56.668094+00:00"
+  },
+  {
+    "orderID": "ORD6832934b",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli99172278",
+        "item_id": "TRP004",
+        "item_type": "ticket",
+        "item_name": "Ticket: City Highlights - 2024-07-17 09:00 AM",
+        "quantity": 1,
+        "unit_price": 10.0,
+        "lineTotal": 10.0,
+        "line_item_status": "CANCELLED"
+      }
+    ],
+    "totalAmount": 0.0,
+    "payment": {
+      "paymentID": "pay9eaa7b7c",
+      "relatedOrderID": "ORD6832934b",
+      "amount": 10.0,
+      "timestamp": "2025-06-01T18:05:06.791819+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "REFUNDED"
+    },
+    "status": "CANCELLED",
+    "cancellationRequests": [
+      "Cancellation requested by user on 2025-06-01T18:06:26.920869+00:00"
+    ],
+    "refundRequests": [
+      "Refund for 10.0 requested on 2025-06-01T18:06:26.921870+00:00 due to: User cancellation request for paid order with active items"
+    ],
+    "orderTimestamp": "2025-06-01T18:05:06.791819+00:00"
+  },
+  {
+    "orderID": "ORD70bf7606",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli2d0e4fca",
+        "item_id": "TRP001",
+        "item_type": "ticket",
+        "item_name": "[RESCHEDULED] Ticket: Downtown Loop - 2024-07-15 10:00 AM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "RESCHEDULED"
+      },
+      {
+        "lineItemID": "slia3dccda2",
+        "item_id": "tkt1605b0ec",
+        "item_type": "ticket",
+        "item_name": "Ticket for TRP002 (Seat: A12)",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 5.0,
+    "payment": {
+      "paymentID": "pay0a4dbf72",
+      "relatedOrderID": "ORD70bf7606",
+      "amount": 5.0,
+      "timestamp": "2025-06-01T18:08:30.376546+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-01T18:08:30.376546+00:00"
+  },
+  {
+    "orderID": "ORD1036",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli2a616019",
+        "item_id": "TRP002",
+        "item_type": "ticket",
+        "item_name": "Ticket: Downtown Loop - 2024-07-15 2:00 PM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "RESCHEDULED"
+      },
+      {
+        "lineItemID": "slifdc154d3",
+        "item_id": "TRP001",
+        "item_type": "ticket",
+        "item_name": "Ticket: Downtown Loop - 2024-07-15 10:00 AM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "CANCELLED"
+      }
+    ],
+    "totalAmount": 0.0,
+    "payment": {
+      "paymentID": "pay6899712b",
+      "relatedOrderID": "ORD1036",
+      "amount": 5.0,
+      "timestamp": "2025-06-01T18:19:09.404945+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "REFUNDED"
+    },
+    "status": "CANCELLED",
+    "cancellationRequests": [],
+    "refundRequests": [
+      "Refund for 5.0 processed on 2025-06-01T18:20:12.635593+00:00 due to: User cancellation request for order with previously active items."
+    ],
+    "orderTimestamp": "2025-06-01T18:19:09.404945+00:00"
+  },
+  {
+    "orderID": "ORD1037",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "slif1d91098",
+        "item_id": "TRP004",
+        "item_type": "ticket",
+        "item_name": "Ticket: City Highlights - 2024-07-17 09:00 AM",
+        "quantity": 1,
+        "unit_price": 10.0,
+        "lineTotal": 10.0,
+        "line_item_status": "CANCELLED"
+      }
+    ],
+    "totalAmount": 0.0,
+    "payment": {
+      "paymentID": "payab0c0b18",
+      "relatedOrderID": "ORD1037",
+      "amount": 10.0,
+      "timestamp": "2025-06-01T18:31:55.672581+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "REFUNDED"
+    },
+    "status": "CANCELLED",
+    "cancellationRequests": [],
+    "refundRequests": [
+      "Refund for 10.0 processed on 2025-06-01T18:32:28.501180+00:00 due to: User cancellation request for order with previously active items."
+    ],
+    "orderTimestamp": "2025-06-01T18:31:55.672581+00:00"
+  },
+  {
+    "orderID": "ORD1038",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "slib5dcf6f9",
+        "item_id": "TRP002",
+        "item_type": "ticket",
+        "item_name": "[RESCHEDULED] Ticket: Downtown Loop - 2024-07-15 2:00 PM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "RESCHEDULED"
+      },
+      {
+        "lineItemID": "slic48acbdd",
+        "item_id": "TRP001",
+        "item_type": "ticket",
+        "item_name": "[RESCHEDULED] Ticket: Downtown Loop - 2024-07-15 10:00 AM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "RESCHEDULED"
+      },
+      {
+        "lineItemID": "slia7069e35",
+        "item_id": "TRP002",
+        "item_type": "ticket",
+        "item_name": "[RESCHEDULED] Ticket: Downtown Loop - 2024-07-15 2:00 PM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "RESCHEDULED"
+      },
+      {
+        "lineItemID": "slic4ed5df0",
+        "item_id": "TRP001",
+        "item_type": "ticket",
+        "item_name": "Ticket: Downtown Loop - 2024-07-15 10:00 AM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "CANCELLED"
+      }
+    ],
+    "totalAmount": 0.0,
+    "payment": {
+      "paymentID": "pay861e9a4a",
+      "relatedOrderID": "ORD1038",
+      "amount": 5.0,
+      "timestamp": "2025-06-01T18:33:03.439933+00:00",
+      "paymentMethodDetails": "Simulated Card",
+      "paymentStatus": "REFUNDED"
+    },
+    "status": "CANCELLED",
+    "cancellationRequests": [],
+    "refundRequests": [
+      "Refund for 5.0 processed on 2025-06-01T18:39:34.481611+00:00 due to: User cancellation request for order with previously active items."
+    ],
+    "orderTimestamp": "2025-06-01T18:33:03.439933+00:00"
+  },
+  {
+    "orderID": "ORD1039",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sliab2c7318",
+        "item_id": "art004",
+        "item_type": "merchandise",
+        "item_name": "ART System Route Map Poster",
+        "quantity": 2,
+        "unit_price": 12.99,
+        "lineTotal": 25.98,
+        "line_item_status": "CANCELLED"
+      },
+      {
+        "lineItemID": "sli215fa066",
+        "item_id": "art005",
+        "item_type": "merchandise",
+        "item_name": "ART 'Future of Transit' T-Shirt",
+        "quantity": 1,
+        "unit_price": 22.0,
+        "lineTotal": 22.0,
+        "line_item_status": "CANCELLED"
+      }
+    ],
+    "totalAmount": 0.0,
+    "payment": {
+      "paymentID": "paya61b5651",
+      "relatedOrderID": "ORD1039",
+      "amount": 47.980000000000004,
+      "timestamp": "2025-06-01T18:34:04.441189+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "REFUNDED"
+    },
+    "status": "CANCELLED",
+    "cancellationRequests": [],
+    "refundRequests": [
+      "Refund for 47.980000000000004 processed on 2025-06-01T18:36:05.707487+00:00 due to: User cancellation request for order with previously active items."
+    ],
+    "orderTimestamp": "2025-06-01T18:34:04.441189+00:00"
+  },
+  {
+    "orderID": "ORD1040",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "slic3b034c1",
+        "item_id": "art006",
+        "item_type": "merchandise",
+        "item_name": "ART Eco Travel Tote Bag",
+        "quantity": 7,
+        "unit_price": 14.75,
+        "lineTotal": 103.25,
+        "line_item_status": "CANCELLED"
+      }
+    ],
+    "totalAmount": 0.0,
+    "payment": {
+      "paymentID": "pay3df02540",
+      "relatedOrderID": "ORD1040",
+      "amount": 103.25,
+      "timestamp": "2025-06-01T18:34:33.274871+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "REFUNDED"
+    },
+    "status": "CANCELLED",
+    "cancellationRequests": [],
+    "refundRequests": [
+      "Refund for 103.25 processed on 2025-06-01T18:34:57.315812+00:00 due to: User cancellation request for order with previously active items."
+    ],
+    "orderTimestamp": "2025-06-01T18:34:33.274871+00:00"
+  },
+  {
+    "orderID": "ORD1041",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "slieb904c2a",
+        "item_id": "art003",
+        "item_type": "merchandise",
+        "item_name": "Miniature ART Vehicle Replica",
+        "quantity": 2,
+        "unit_price": 35.0,
+        "lineTotal": 70.0,
+        "line_item_status": "CANCELLED"
+      }
+    ],
+    "totalAmount": 0.0,
+    "payment": {
+      "paymentID": "pay27ae8677",
+      "relatedOrderID": "ORD1041",
+      "amount": 70.0,
+      "timestamp": "2025-06-01T18:38:35.147690+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "REFUNDED"
+    },
+    "status": "CANCELLED",
+    "cancellationRequests": [],
+    "refundRequests": [
+      "Refund for 70.0 processed on 2025-06-01T18:38:49.796912+00:00 due to: User cancellation request for order with previously active items."
+    ],
+    "orderTimestamp": "2025-06-01T18:38:35.147690+00:00"
+  },
+  {
+    "orderID": "ORD1042",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "slieae74415",
+        "item_id": "art006",
+        "item_type": "merchandise",
+        "item_name": "ART Eco Travel Tote Bag",
+        "quantity": 1,
+        "unit_price": 14.75,
+        "lineTotal": 14.75,
+        "line_item_status": "CANCELLED"
+      }
+    ],
+    "totalAmount": 0.0,
+    "payment": {
+      "paymentID": "payde4254ec",
+      "relatedOrderID": "ORD1042",
+      "amount": 14.75,
+      "timestamp": "2025-06-01T18:40:35.199891+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "REFUNDED"
+    },
+    "status": "CANCELLED",
+    "cancellationRequests": [],
+    "refundRequests": [
+      "Refund for 14.75 processed on 2025-06-01T18:40:50.365309+00:00 due to: User cancellation request for order with previously active items."
+    ],
+    "orderTimestamp": "2025-06-01T18:40:35.199891+00:00"
+  },
+  {
+    "orderID": "ORD1043",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli2e840b10",
+        "item_id": "TRP004",
+        "item_type": "ticket",
+        "item_name": "Ticket: City Highlights - 2024-07-17 09:00 AM",
+        "quantity": 1,
+        "unit_price": 10.0,
+        "lineTotal": 10.0,
+        "line_item_status": "CANCELLED"
+      }
+    ],
+    "totalAmount": 0.0,
+    "payment": {
+      "paymentID": "pay2c34afe2",
+      "relatedOrderID": "ORD1043",
+      "amount": 10.0,
+      "timestamp": "2025-06-01T18:40:59.999890+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "REFUNDED"
+    },
+    "status": "CANCELLED",
+    "cancellationRequests": [],
+    "refundRequests": [
+      "Refund for 10.0 processed on 2025-06-01T18:41:35.880978+00:00 due to: User cancellation request for order with previously active items."
+    ],
+    "orderTimestamp": "2025-06-01T18:40:59.999890+00:00"
+  },
+  {
+    "orderID": "ORD1044",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli0191174d",
+        "item_id": "TRP001",
+        "item_type": "ticket",
+        "item_name": "[RESCHEDULED] Ticket: Downtown Loop - 2024-07-15 10:00 AM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "RESCHEDULED"
+      },
+      {
+        "lineItemID": "sli64759910",
+        "item_id": "TRP002",
+        "item_type": "ticket",
+        "item_name": "[RESCHEDULED] Ticket: Downtown Loop - 2024-07-15 2:00 PM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "RESCHEDULED"
+      },
+      {
+        "lineItemID": "sli49deee5d",
+        "item_id": "TRP001",
+        "item_type": "ticket",
+        "item_name": "Ticket: Downtown Loop - 2024-07-15 10:00 AM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "CANCELLED"
+      }
+    ],
+    "totalAmount": 0.0,
+    "payment": {
+      "paymentID": "pay26b10915",
+      "relatedOrderID": "ORD1044",
+      "amount": 5.0,
+      "timestamp": "2025-06-01T18:41:53.883576+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "REFUNDED"
+    },
+    "status": "CANCELLED",
+    "cancellationRequests": [],
+    "refundRequests": [
+      "Refund for 5.0 processed on 2025-06-01T18:42:53.683990+00:00 due to: User cancellation request for order with previously active items."
+    ],
+    "orderTimestamp": "2025-06-01T18:41:53.883576+00:00"
+  },
+  {
+    "orderID": "ORD1045",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli217a6b3c",
+        "item_id": "TRP002",
+        "item_type": "ticket",
+        "item_name": "[RESCHEDULED] Ticket: Downtown Loop - 2024-07-15 2:00 PM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "RESCHEDULED"
+      },
+      {
+        "lineItemID": "slib3e62e37",
+        "item_id": "TRP001",
+        "item_type": "ticket",
+        "item_name": "Ticket: Downtown Loop - 2024-07-15 10:00 AM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "CANCELLED"
+      }
+    ],
+    "totalAmount": 0.0,
+    "payment": {
+      "paymentID": "pay70c59b9a",
+      "relatedOrderID": "ORD1045",
+      "amount": 5.0,
+      "timestamp": "2025-06-01T18:58:39.743278+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "REFUNDED"
+    },
+    "status": "CANCELLED",
+    "cancellationRequests": [],
+    "refundRequests": [
+      "Refund for 5.0 processed on 2025-06-01T18:59:18.708272+00:00 due to: User cancellation request for order with previously active items."
+    ],
+    "orderTimestamp": "2025-06-01T18:58:39.743278+00:00"
+  },
+  {
+    "orderID": "ORD1046",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "slid675faa3",
+        "item_id": "art001",
+        "item_type": "merchandise",
+        "item_name": "ART System Explorer Pass",
+        "quantity": 1,
+        "unit_price": 25.0,
+        "lineTotal": 25.0,
+        "line_item_status": "CANCELLED"
+      }
+    ],
+    "totalAmount": 0.0,
+    "payment": {
+      "paymentID": "pay028998f7",
+      "relatedOrderID": "ORD1046",
+      "amount": 25.0,
+      "timestamp": "2025-06-01T18:59:43.576493+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "REFUNDED"
+    },
+    "status": "CANCELLED",
+    "cancellationRequests": [],
+    "refundRequests": [
+      "Refund for 25.0 processed on 2025-06-01T18:59:58.158181+00:00 due to: User cancellation request for order with previously active items."
+    ],
+    "orderTimestamp": "2025-06-01T18:59:43.576493+00:00"
+  },
+  {
+    "orderID": "ORD1047",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli46f2ec4b",
+        "item_id": "TRP004",
+        "item_type": "ticket",
+        "item_name": "Ticket: City Highlights - 2024-07-17 09:00 AM",
+        "quantity": 1,
+        "unit_price": 10.0,
+        "lineTotal": 10.0,
+        "line_item_status": "CANCELLED"
+      }
+    ],
+    "totalAmount": 0.0,
+    "payment": {
+      "paymentID": "pay5169cb38",
+      "relatedOrderID": "ORD1047",
+      "amount": 10.0,
+      "timestamp": "2025-06-01T19:26:19.020898+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "REFUNDED"
+    },
+    "status": "CANCELLED",
+    "cancellationRequests": [
+      "Cancellation requested by user on 2025-06-01T19:38:56.273277+00:00"
+    ],
+    "refundRequests": [
+      "Refund for 10.0 requested on 2025-06-01T19:38:56.275664+00:00 due to: User cancellation request processed on 2025-06-01T19:38:56.275664+00:00"
+    ],
+    "orderTimestamp": "2025-06-01T19:26:19.018209+00:00"
+  },
+  {
+    "orderID": "ORD1048",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "slie247396a",
+        "item_id": "TRP004",
+        "item_type": "ticket",
+        "item_name": "Ticket: City Highlights - 2024-07-17 09:00 AM",
+        "quantity": 1,
+        "unit_price": 10.0,
+        "lineTotal": 10.0,
+        "line_item_status": "CANCELLED"
+      }
+    ],
+    "totalAmount": 0.0,
+    "payment": {
+      "paymentID": "pay8cf7a877",
+      "relatedOrderID": "ORD1048",
+      "amount": 10.0,
+      "timestamp": "2025-06-01T19:30:05.105132+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "REFUNDED"
+    },
+    "status": "CANCELLED",
+    "cancellationRequests": [
+      "Cancellation requested by user on 2025-06-01T19:33:42.791893+00:00"
+    ],
+    "refundRequests": [
+      "Refund for 10.0 requested on 2025-06-01T19:33:42.793525+00:00 due to: User cancellation request processed on 2025-06-01T19:33:42.793525+00:00"
+    ],
+    "orderTimestamp": "2025-06-01T19:30:05.104548+00:00"
+  },
+  {
+    "orderID": "ORD1049",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli2b9c6b3f",
+        "item_id": "art006",
+        "item_type": "merchandise",
+        "item_name": "ART Eco Travel Tote Bag",
+        "quantity": 1,
+        "unit_price": 14.75,
+        "lineTotal": 14.75,
+        "line_item_status": "CANCELLED"
+      }
+    ],
+    "totalAmount": 0.0,
+    "payment": {
+      "paymentID": "paya4ee683d",
+      "relatedOrderID": "ORD1049",
+      "amount": 14.75,
+      "timestamp": "2025-06-01T19:36:22.232022+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "REFUNDED"
+    },
+    "status": "CANCELLED",
+    "cancellationRequests": [
+      "Cancellation requested by user on 2025-06-01T19:36:44.347161+00:00"
+    ],
+    "refundRequests": [
+      "Refund for 14.75 requested on 2025-06-01T19:36:44.349059+00:00 due to: User cancellation request processed on 2025-06-01T19:36:44.349059+00:00"
+    ],
+    "orderTimestamp": "2025-06-01T19:36:22.232022+00:00"
+  },
+  {
+    "orderID": "ORD1050",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "slibc7501e2",
+        "item_id": "TRP002",
+        "item_type": "ticket",
+        "item_name": "[RESCHEDULED] Ticket: Downtown Loop - 2024-07-15 2:00 PM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "RESCHEDULED"
+      },
+      {
+        "lineItemID": "sli95a41bb2",
+        "item_id": "TRP001",
+        "item_type": "ticket",
+        "item_name": "Ticket: Downtown Loop - 2024-07-15 10:00 AM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "CANCELLED"
+      }
+    ],
+    "totalAmount": 0.0,
+    "payment": {
+      "paymentID": "pay5cbbcd09",
+      "relatedOrderID": "ORD1050",
+      "amount": 5.0,
+      "timestamp": "2025-06-01T19:37:41.267462+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "REFUNDED"
+    },
+    "status": "CANCELLED",
+    "cancellationRequests": [
+      "Cancellation requested by user on 2025-06-01T19:39:18.667780+00:00"
+    ],
+    "refundRequests": [
+      "Refund for 5.0 requested on 2025-06-01T19:39:18.671285+00:00 due to: User cancellation request processed on 2025-06-01T19:39:18.671285+00:00"
+    ],
+    "orderTimestamp": "2025-06-01T19:37:41.265292+00:00"
+  },
+  {
+    "orderID": "ORD1051",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sliac4d9061",
+        "item_id": "art002",
+        "item_type": "merchandise",
+        "item_name": "ART Smart Journey Mug",
+        "quantity": 3,
+        "unit_price": 18.5,
+        "lineTotal": 55.5,
+        "line_item_status": "CANCELLED"
+      }
+    ],
+    "totalAmount": 0.0,
+    "payment": {
+      "paymentID": "pay457c0105",
+      "relatedOrderID": "ORD1051",
+      "amount": 55.5,
+      "timestamp": "2025-06-01T19:44:45.827544+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "REFUNDED"
+    },
+    "status": "CANCELLED",
+    "cancellationRequests": [
+      "Cancellation requested by user on 2025-06-01T19:45:10.760490+00:00"
+    ],
+    "refundRequests": [
+      "Refund for 55.5 requested on 2025-06-01T19:45:10.763099+00:00 due to: User cancellation request processed on 2025-06-01T19:45:10.763099+00:00"
+    ],
+    "orderTimestamp": "2025-06-01T19:44:45.827544+00:00"
+  },
+  {
+    "orderID": "ORD1052",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli91ecff2e",
+        "item_id": "TRP002",
+        "item_type": "ticket",
+        "item_name": "Ticket: Downtown Loop - 2024-07-15 2:00 PM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "RESCHEDULED"
+      },
+      {
+        "lineItemID": "sli492acbaa",
+        "item_id": "TRP001",
+        "item_type": "ticket",
+        "item_name": "Ticket: Downtown Loop - 2024-07-15 10:00 AM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "RESCHEDULED"
+      },
+      {
+        "lineItemID": "sli867edc88",
+        "item_id": "TRP002",
+        "item_type": "ticket",
+        "item_name": "Ticket: Downtown Loop - 2024-07-15 2:00 PM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 5.0,
+    "payment": {
+      "paymentID": "payc28467df",
+      "relatedOrderID": "ORD1052",
+      "amount": 5.0,
+      "timestamp": "2025-06-02T16:11:21.509634+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-02T16:11:21.506057+00:00"
+  },
+  {
+    "orderID": "ORD1053",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sliaa1ab171",
+        "item_id": "TRP004",
+        "item_type": "ticket",
+        "item_name": "Ticket: City Highlights - 2024-07-17 09:00 AM",
+        "quantity": 1,
+        "unit_price": 10.0,
+        "lineTotal": 10.0,
+        "line_item_status": "CANCELLED"
+      }
+    ],
+    "totalAmount": 0.0,
+    "payment": {
+      "paymentID": "pay9d4c78fb",
+      "relatedOrderID": "ORD1053",
+      "amount": 10.0,
+      "timestamp": "2025-06-02T16:44:13.319217+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "REFUNDED"
+    },
+    "status": "CANCELLED",
+    "cancellationRequests": [
+      "Cancellation requested by user on 2025-06-02T16:45:11.856719+00:00"
+    ],
+    "refundRequests": [
+      "Refund for 10.0 requested on 2025-06-02T16:45:11.860743+00:00 due to: User cancellation request processed on 2025-06-02T16:45:11.858731+00:00"
+    ],
+    "orderTimestamp": "2025-06-02T16:44:13.302924+00:00"
+  },
+  {
+    "orderID": "ORD1054",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli8c229e2c",
+        "item_id": "art001",
+        "item_type": "merchandise",
+        "item_name": "ART System Explorer Pass",
+        "quantity": 10,
+        "unit_price": 25.0,
+        "lineTotal": 250.0,
+        "line_item_status": "CANCELLED"
+      }
+    ],
+    "totalAmount": 0.0,
+    "payment": {
+      "paymentID": "pay10d98622",
+      "relatedOrderID": "ORD1054",
+      "amount": 250.0,
+      "timestamp": "2025-06-02T16:45:57.517736+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "REFUNDED"
+    },
+    "status": "CANCELLED",
+    "cancellationRequests": [
+      "Cancellation requested by user on 2025-06-02T16:46:15.502656+00:00"
+    ],
+    "refundRequests": [
+      "Refund for 250.0 requested on 2025-06-02T16:46:15.504730+00:00 due to: User cancellation request processed on 2025-06-02T16:46:15.504730+00:00"
+    ],
+    "orderTimestamp": "2025-06-02T16:45:57.517736+00:00"
+  },
+  {
+    "orderID": "ORD1055",
+    "placingAccountID": "acc003",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli0dd8cb46",
+        "item_id": "TRP002",
+        "item_type": "ticket",
+        "item_name": "Ticket: Downtown Loop - 2024-07-15 2:00 PM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "RESCHEDULED"
+      },
+      {
+        "lineItemID": "sli189b241f",
+        "item_id": "TRP001",
+        "item_type": "ticket",
+        "item_name": "Ticket: Downtown Loop - 2024-07-15 10:00 AM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "RESCHEDULED"
+      },
+      {
+        "lineItemID": "slif2a03734",
+        "item_id": "TRP002",
+        "item_type": "ticket",
+        "item_name": "Ticket: Downtown Loop - 2024-07-15 2:00 PM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "CANCELLED"
+      }
+    ],
+    "totalAmount": 0.0,
+    "payment": {
+      "paymentID": "pay36d12eb9",
+      "relatedOrderID": "ORD1055",
+      "amount": 5.0,
+      "timestamp": "2025-06-03T06:17:25.212133+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "REFUNDED"
+    },
+    "status": "CANCELLED",
+    "cancellationRequests": [
+      "Cancellation requested by user on 2025-06-03T06:54:54.940534+00:00"
+    ],
+    "refundRequests": [
+      "Refund for 5.0 requested on 2025-06-03T06:54:54.944583+00:00 due to: User cancellation request processed on 2025-06-03T06:54:54.944583+00:00"
+    ],
+    "orderTimestamp": "2025-06-03T06:17:25.206540+00:00"
+  },
+  {
+    "orderID": "ORD1056",
+    "placingAccountID": "acc003",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli10f3a1e3",
+        "item_id": "TRP004",
+        "item_type": "ticket",
+        "item_name": "Ticket: City Highlights - 2024-07-17 09:00 AM",
+        "quantity": 1,
+        "unit_price": 10.0,
+        "lineTotal": 10.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 10.0,
+    "payment": {
+      "paymentID": "pay1528d09d",
+      "relatedOrderID": "ORD1056",
+      "amount": 10.0,
+      "timestamp": "2025-06-03T06:20:42.370628+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-03T06:20:42.367614+00:00"
+  },
+  {
+    "orderID": "ORD1057",
+    "placingAccountID": "acc003",
+    "orderLinetems": [
+      {
+        "lineItemID": "slif6f27477",
+        "item_id": "art001",
+        "item_type": "merchandise",
+        "item_name": "ART System Explorer Pass",
+        "quantity": 1,
+        "unit_price": 25.0,
+        "lineTotal": 25.0,
+        "line_item_status": "CANCELLED"
+      }
+    ],
+    "totalAmount": 0.0,
+    "payment": {
+      "paymentID": "pay20eea559",
+      "relatedOrderID": "ORD1057",
+      "amount": 25.0,
+      "timestamp": "2025-06-03T06:48:27.845035+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "REFUNDED"
+    },
+    "status": "CANCELLED",
+    "cancellationRequests": [
+      "Cancellation requested by user on 2025-06-03T06:48:49.359540+00:00"
+    ],
+    "refundRequests": [
+      "Refund for 25.0 requested on 2025-06-03T06:48:49.368618+00:00 due to: User cancellation request processed on 2025-06-03T06:48:49.366601+00:00"
+    ],
+    "orderTimestamp": "2025-06-03T06:48:27.843024+00:00"
+  },
+  {
+    "orderID": "ORD1058",
+    "placingAccountID": "acc003",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli388c9baf",
+        "item_id": "art003",
+        "item_type": "merchandise",
+        "item_name": "Miniature ART Vehicle Replica",
+        "quantity": 2,
+        "unit_price": 35.0,
+        "lineTotal": 70.0,
+        "line_item_status": "CANCELLED"
+      }
+    ],
+    "totalAmount": 0.0,
+    "payment": {
+      "paymentID": "pay30712e9a",
+      "relatedOrderID": "ORD1058",
+      "amount": 70.0,
+      "timestamp": "2025-06-03T06:51:16.954683+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "REFUNDED"
+    },
+    "status": "CANCELLED",
+    "cancellationRequests": [
+      "Cancellation requested by user on 2025-06-03T06:57:24.873885+00:00"
+    ],
+    "refundRequests": [
+      "Refund for 70.0 requested on 2025-06-03T06:57:24.877226+00:00 due to: User cancellation request processed on 2025-06-03T06:57:24.877226+00:00"
+    ],
+    "orderTimestamp": "2025-06-03T06:51:16.952669+00:00"
+  },
+  {
+    "orderID": "ORD1059",
+    "placingAccountID": "acc003",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli93f1353b",
+        "item_id": "TRP004",
+        "item_type": "ticket",
+        "item_name": "Ticket: City Highlights - 2024-07-17 09:00 AM",
+        "quantity": 1,
+        "unit_price": 10.0,
+        "lineTotal": 10.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 10.0,
+    "payment": {
+      "paymentID": "pay33f54bd6",
+      "relatedOrderID": "ORD1059",
+      "amount": 10.0,
+      "timestamp": "2025-06-03T06:51:32.523620+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-03T06:51:32.520054+00:00"
+  },
+  {
+    "orderID": "ORD1060",
+    "placingAccountID": "acc003",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli8219e402",
+        "item_id": "TRP004",
+        "item_type": "ticket",
+        "item_name": "Ticket: City Highlights - 2024-07-17 09:00 AM",
+        "quantity": 1,
+        "unit_price": 10.0,
+        "lineTotal": 10.0,
+        "line_item_status": "CANCELLED"
+      }
+    ],
+    "totalAmount": 0.0,
+    "payment": {
+      "paymentID": "pay44d2b872",
+      "relatedOrderID": "ORD1060",
+      "amount": 10.0,
+      "timestamp": "2025-06-03T06:53:03.448833+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "REFUNDED"
+    },
+    "status": "CANCELLED",
+    "cancellationRequests": [
+      "Cancellation requested by user on 2025-06-03T06:53:20.893341+00:00"
+    ],
+    "refundRequests": [
+      "Refund for 10.0 requested on 2025-06-03T06:53:20.895719+00:00 due to: User cancellation request processed on 2025-06-03T06:53:20.895719+00:00"
+    ],
+    "orderTimestamp": "2025-06-03T06:53:03.429723+00:00"
+  },
+  {
+    "orderID": "ORD1061",
+    "placingAccountID": "acc003",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli1663068e",
+        "item_id": "TRP001",
+        "item_type": "ticket",
+        "item_name": "Ticket: Downtown Loop - 2024-07-15 10:00 AM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "RESCHEDULED"
+      },
+      {
+        "lineItemID": "sli19727d31",
+        "item_id": "TRP002",
+        "item_type": "ticket",
+        "item_name": "Ticket: Downtown Loop - 2024-07-15 2:00 PM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "CANCELLED"
+      }
+    ],
+    "totalAmount": 0.0,
+    "payment": {
+      "paymentID": "pay95e7561e",
+      "relatedOrderID": "ORD1061",
+      "amount": 5.0,
+      "timestamp": "2025-06-03T06:55:41.208378+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "REFUNDED"
+    },
+    "status": "CANCELLED",
+    "cancellationRequests": [
+      "Cancellation requested by user on 2025-06-03T06:56:22.449157+00:00"
+    ],
+    "refundRequests": [
+      "Refund for 5.0 requested on 2025-06-03T06:56:22.455407+00:00 due to: User cancellation request processed on 2025-06-03T06:56:22.455407+00:00"
+    ],
+    "orderTimestamp": "2025-06-03T06:55:41.205720+00:00"
+  },
+  {
+    "orderID": "ORD1062",
+    "placingAccountID": "acc003",
+    "orderLinetems": [
+      {
+        "lineItemID": "slic65e4d07",
+        "item_id": "art004",
+        "item_type": "merchandise",
+        "item_name": "ART System Route Map Poster",
+        "quantity": 2,
+        "unit_price": 12.99,
+        "lineTotal": 25.98,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 25.98,
+    "payment": {
+      "paymentID": "paybe0d5585",
+      "relatedOrderID": "ORD1062",
+      "amount": 25.98,
+      "timestamp": "2025-06-03T06:56:45.416389+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-03T06:56:45.414876+00:00"
+  },
+  {
+    "orderID": "ORD1063",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sliaf219148",
+        "item_id": "TRP002",
+        "item_type": "ticket",
+        "item_name": "Ticket: Rembus to Hikmah Exchange - 2024-07-15 2:00 PM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 5.0,
+    "payment": {
+      "paymentID": "pay23274958",
+      "relatedOrderID": "ORD1063",
+      "amount": 5.0,
+      "timestamp": "2025-06-03T12:35:48.086127+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-03T12:35:48.076637+00:00"
+  },
+  {
+    "orderID": "ORD1064",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli1378c4ca",
+        "item_id": "TRP007",
+        "item_type": "ticket",
+        "item_name": "Ticket: UNIMAS to Sarawak General Hospital - 2024-07-18 01:00 PM",
+        "quantity": 1,
+        "unit_price": 5.5,
+        "lineTotal": 5.5,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 5.5,
+    "payment": {
+      "paymentID": "pay40ac3c1f",
+      "relatedOrderID": "ORD1064",
+      "amount": 5.5,
+      "timestamp": "2025-06-03T13:20:10.599133+00:00",
+      "paymentMethodDetails": "Simulated Card",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-03T13:20:10.596642+00:00"
+  },
+  {
+    "orderID": "ORD1065",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli196795ef",
+        "item_id": "TRP001",
+        "item_type": "ticket",
+        "item_name": "Ticket: Rembus to Hikmah Exchange - 2024-07-15 10:00 AM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 5.0,
+    "payment": {
+      "paymentID": "pay77689411",
+      "relatedOrderID": "ORD1065",
+      "amount": 5.0,
+      "timestamp": "2025-06-03T13:30:18.662000+00:00",
+      "paymentMethodDetails": "Simulated Card",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-03T13:30:18.659977+00:00"
+  },
+  {
+    "orderID": "ORD1066",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli21698195",
+        "item_id": "art003",
+        "item_type": "merchandise",
+        "item_name": "Miniature ART Vehicle Replica",
+        "quantity": 4,
+        "unit_price": 35.0,
+        "lineTotal": 140.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 140.0,
+    "payment": {
+      "paymentID": "pay6efe6875",
+      "relatedOrderID": "ORD1066",
+      "amount": 140.0,
+      "timestamp": "2025-06-03T13:33:20.544466+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-03T13:33:20.543880+00:00"
+  },
+  {
+    "orderID": "ORD1067",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli91b1de41",
+        "item_id": "TRP008",
+        "item_type": "ticket",
+        "item_name": "Ticket: Darul Hana to Damai Central - 2024-07-19 03:45 PM",
+        "quantity": 1,
+        "unit_price": 9.0,
+        "lineTotal": 9.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 9.0,
+    "payment": {
+      "paymentID": "paye0696e4f",
+      "relatedOrderID": "ORD1067",
+      "amount": 9.0,
+      "timestamp": "2025-06-03T13:49:19.165036+00:00",
+      "paymentMethodDetails": "Simulated Card",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-03T13:49:19.163170+00:00"
+  },
+  {
+    "orderID": "ORD1068",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli25d69d3e",
+        "item_id": "TRP002",
+        "item_type": "ticket",
+        "item_name": "Ticket: Rembus to Hikmah Exchange - 2024-07-15 2:00 PM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "CANCELLED"
+      }
+    ],
+    "totalAmount": 0.0,
+    "payment": {
+      "paymentID": "pay0b6a5d4f",
+      "relatedOrderID": "ORD1068",
+      "amount": 5.0,
+      "timestamp": "2025-06-03T14:06:04.833430+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "REFUNDED"
+    },
+    "status": "CANCELLED",
+    "cancellationRequests": [
+      "Cancellation requested by user on 2025-06-03T14:06:32.596659+00:00"
+    ],
+    "refundRequests": [
+      "Refund for 5.0 requested on 2025-06-03T14:06:32.599037+00:00 due to: User cancellation request processed on 2025-06-03T14:06:32.598942+00:00"
+    ],
+    "orderTimestamp": "2025-06-03T14:06:04.829102+00:00"
+  },
+  {
+    "orderID": "ORD1069",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli2873c360",
+        "item_id": "TRP001",
+        "item_type": "ticket",
+        "item_name": "Ticket: Rembus to Hikmah Exchange - 2024-07-15 10:00 AM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "RESCHEDULED"
+      },
+      {
+        "lineItemID": "sli51837a94",
+        "item_id": "TRP002",
+        "item_type": "ticket",
+        "item_name": "Ticket: Rembus to Hikmah Exchange - 2024-07-15 2:00 PM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 5.0,
+    "payment": {
+      "paymentID": "pay4170d58c",
+      "relatedOrderID": "ORD1069",
+      "amount": 5.0,
+      "timestamp": "2025-06-03T15:49:29.078996+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-03T15:49:29.074840+00:00"
+  },
+  {
+    "orderID": "ORD1070",
+    "placingAccountID": "acc001",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli56e98a1c",
+        "item_id": "TRP001",
+        "item_type": "ticket",
+        "item_name": "Ticket: Rembus to Hikmah Exchange - 2024-07-15 10:00 AM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "RESCHEDULED"
+      },
+      {
+        "lineItemID": "sliba2cf2c1",
+        "item_id": "TRP002",
+        "item_type": "ticket",
+        "item_name": "Ticket: Rembus to Hikmah Exchange - 2024-07-15 2:00 PM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 5.0,
+    "payment": {
+      "paymentID": "payb2a72151",
+      "relatedOrderID": "ORD1070",
+      "amount": 5.0,
+      "timestamp": "2025-06-03T15:50:15.381639+00:00",
+      "paymentMethodDetails": "Simulated Card",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-03T15:50:15.377964+00:00"
+  },
+  {
+    "orderID": "ORD1071",
+    "placingAccountID": "acc002",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli0d103955",
+        "item_id": "TRP004",
+        "item_type": "ticket",
+        "item_name": "Ticket: Pending to Damai Central - 2024-07-17 09:00 AM",
+        "quantity": 1,
+        "unit_price": 10.0,
+        "lineTotal": 10.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 10.0,
+    "payment": {
+      "paymentID": "paybb0bf8d0",
+      "relatedOrderID": "ORD1071",
+      "amount": 10.0,
+      "timestamp": "2025-06-03T17:20:26.635735+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-03T17:20:26.633438+00:00"
+  },
+  {
+    "orderID": "ORD1072",
+    "placingAccountID": "acc004",
+    "orderLinetems": [
+      {
+        "lineItemID": "slid698f6b3",
+        "item_id": "TRP001",
+        "item_type": "ticket",
+        "item_name": "Ticket: Rembus to Hikmah Exchange - 2024-06-15 10:00 AM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 5.0,
+    "payment": {
+      "paymentID": "pay6a54cc55",
+      "relatedOrderID": "ORD1072",
+      "amount": 5.0,
+      "timestamp": "2025-06-03T18:57:14.083030+00:00",
+      "paymentMethodDetails": "Simulated Card",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-03T18:57:14.067175+00:00"
+  },
+  {
+    "orderID": "ORD1073",
+    "placingAccountID": "acc004",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli626f89c1",
+        "item_id": "TRP002",
+        "item_type": "ticket",
+        "item_name": "Ticket: Rembus to Hikmah Exchange - 2024-06-15 2:00 PM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 5.0,
+    "payment": {
+      "paymentID": "pay336af9b5",
+      "relatedOrderID": "ORD1073",
+      "amount": 5.0,
+      "timestamp": "2025-06-03T18:59:25.745924+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-03T18:59:25.740992+00:00"
+  },
+  {
+    "orderID": "ORD1074",
+    "placingAccountID": "acc004",
+    "orderLinetems": [
+      {
+        "lineItemID": "slibfc10022",
+        "item_id": "TRP007",
+        "item_type": "ticket",
+        "item_name": "Ticket: UNIMAS to Sarawak General Hospital - 2024-06-18 01:00 PM",
+        "quantity": 1,
+        "unit_price": 5.5,
+        "lineTotal": 5.5,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 5.5,
+    "payment": {
+      "paymentID": "pay1a564539",
+      "relatedOrderID": "ORD1074",
+      "amount": 5.5,
+      "timestamp": "2025-06-03T19:08:12.705618+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-03T19:08:12.698683+00:00"
+  },
+  {
+    "orderID": "ORD1075",
+    "placingAccountID": "acc004",
+    "orderLinetems": [
+      {
+        "lineItemID": "slie458f1f4",
+        "item_id": "TRP004",
+        "item_type": "ticket",
+        "item_name": "Ticket: Pending to Damai Central - 2024-06-17 09:00 AM",
+        "quantity": 1,
+        "unit_price": 10.0,
+        "lineTotal": 10.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 10.0,
+    "payment": {
+      "paymentID": "payb4cb4655",
+      "relatedOrderID": "ORD1075",
+      "amount": 10.0,
+      "timestamp": "2025-06-03T19:09:08.331439+00:00",
+      "paymentMethodDetails": "Simulated Card",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-03T19:09:08.327115+00:00"
+  },
+  {
+    "orderID": "ORD1076",
+    "placingAccountID": "acc004",
+    "orderLinetems": [
+      {
+        "lineItemID": "slicb26b8fc",
+        "item_id": "art003",
+        "item_type": "merchandise",
+        "item_name": "Miniature ART Vehicle Replica",
+        "quantity": 3,
+        "unit_price": 35.0,
+        "lineTotal": 105.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 105.0,
+    "payment": {
+      "paymentID": "pay7b6667ca",
+      "relatedOrderID": "ORD1076",
+      "amount": 105.0,
+      "timestamp": "2025-06-03T19:12:42.466592+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-03T19:12:42.465600+00:00"
+  },
+  {
+    "orderID": "ORD1077",
+    "placingAccountID": "acc004",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli7aa77377",
+        "item_id": "TRP006",
+        "item_type": "ticket",
+        "item_name": "Ticket: Kuching International Airport to VivaCity - 2024-06-18 08:30 AM",
+        "quantity": 1,
+        "unit_price": 6.0,
+        "lineTotal": 6.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 6.0,
+    "payment": {
+      "paymentID": "pay778f2c8d",
+      "relatedOrderID": "ORD1077",
+      "amount": 6.0,
+      "timestamp": "2025-06-03T19:14:28.321062+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-03T19:14:28.316894+00:00"
+  },
+  {
+    "orderID": "ORD1078",
+    "placingAccountID": "acc004",
+    "orderLinetems": [
+      {
+        "lineItemID": "slib716b95e",
+        "item_id": "TRP006",
+        "item_type": "ticket",
+        "item_name": "Ticket: Kuching International Airport to VivaCity - 2024-06-18 08:30 AM",
+        "quantity": 1,
+        "unit_price": 6.0,
+        "lineTotal": 6.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 6.0,
+    "payment": {
+      "paymentID": "pay26c5f42e",
+      "relatedOrderID": "ORD1078",
+      "amount": 6.0,
+      "timestamp": "2025-06-03T19:16:22.351617+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-03T19:16:22.347442+00:00"
+  },
+  {
+    "orderID": "ORD1079",
+    "placingAccountID": "acc004",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli476542ff",
+        "item_id": "TRP006",
+        "item_type": "ticket",
+        "item_name": "Ticket: Kuching International Airport to VivaCity - 2024-06-18 08:30 AM",
+        "quantity": 1,
+        "unit_price": 6.0,
+        "lineTotal": 6.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 6.0,
+    "payment": {
+      "paymentID": "pay45f39d41",
+      "relatedOrderID": "ORD1079",
+      "amount": 6.0,
+      "timestamp": "2025-06-03T19:16:31.601133+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-03T19:16:31.599927+00:00"
+  },
+  {
+    "orderID": "ORD1080",
+    "placingAccountID": "acc004",
+    "orderLinetems": [
+      {
+        "lineItemID": "sliac9746d4",
+        "item_id": "TRP006",
+        "item_type": "ticket",
+        "item_name": "Ticket: Kuching International Airport to VivaCity - 2024-06-18 08:30 AM",
+        "quantity": 1,
+        "unit_price": 6.0,
+        "lineTotal": 6.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 6.0,
+    "payment": {
+      "paymentID": "pay362a39fa",
+      "relatedOrderID": "ORD1080",
+      "amount": 6.0,
+      "timestamp": "2025-06-03T19:17:08.424704+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-03T19:17:08.421563+00:00"
+  },
+  {
+    "orderID": "ORD1081",
+    "placingAccountID": "acc004",
+    "orderLinetems": [
+      {
+        "lineItemID": "slic5bb42b0",
+        "item_id": "TRP006",
+        "item_type": "ticket",
+        "item_name": "Ticket: Kuching International Airport to VivaCity - 2024-06-18 08:30 AM",
+        "quantity": 1,
+        "unit_price": 6.0,
+        "lineTotal": 6.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 6.0,
+    "payment": {
+      "paymentID": "pay33932352",
+      "relatedOrderID": "ORD1081",
+      "amount": 6.0,
+      "timestamp": "2025-06-03T19:17:19.747926+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-03T19:17:19.744549+00:00"
+  },
+  {
+    "orderID": "ORD1082",
+    "placingAccountID": "acc004",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli01ffbd26",
+        "item_id": "TRP006",
+        "item_type": "ticket",
+        "item_name": "Ticket: Kuching International Airport to VivaCity - 2024-06-18 08:30 AM",
+        "quantity": 1,
+        "unit_price": 6.0,
+        "lineTotal": 6.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 6.0,
+    "payment": {
+      "paymentID": "pay2a8c3cd3",
+      "relatedOrderID": "ORD1082",
+      "amount": 6.0,
+      "timestamp": "2025-06-03T19:18:27.394037+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-03T19:18:27.391461+00:00"
+  },
+  {
+    "orderID": "ORD1083",
+    "placingAccountID": "acc004",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli9dbe6562",
+        "item_id": "TRP006",
+        "item_type": "ticket",
+        "item_name": "Ticket: Kuching International Airport to VivaCity - 2024-06-18 08:30 AM",
+        "quantity": 1,
+        "unit_price": 6.0,
+        "lineTotal": 6.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 6.0,
+    "payment": {
+      "paymentID": "pay121da8b4",
+      "relatedOrderID": "ORD1083",
+      "amount": 6.0,
+      "timestamp": "2025-06-03T19:18:38.837128+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-03T19:18:38.832817+00:00"
+  },
+  {
+    "orderID": "ORD1084",
+    "placingAccountID": "acc004",
+    "orderLinetems": [
+      {
+        "lineItemID": "slib4d77ca0",
+        "item_id": "TRP007",
+        "item_type": "ticket",
+        "item_name": "Ticket: UNIMAS to Sarawak General Hospital - 2024-06-18 01:00 PM",
+        "quantity": 1,
+        "unit_price": 5.5,
+        "lineTotal": 5.5,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 5.5,
+    "payment": {
+      "paymentID": "pay0517c8a0",
+      "relatedOrderID": "ORD1084",
+      "amount": 5.5,
+      "timestamp": "2025-06-03T19:20:27.706605+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-03T19:20:27.702136+00:00"
+  },
+  {
+    "orderID": "ORD1085",
+    "placingAccountID": "acc004",
+    "orderLinetems": [
+      {
+        "lineItemID": "slida63cba7",
+        "item_id": "TRP007",
+        "item_type": "ticket",
+        "item_name": "Ticket: UNIMAS to Sarawak General Hospital - 2024-06-18 01:00 PM",
+        "quantity": 1,
+        "unit_price": 5.5,
+        "lineTotal": 5.5,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 5.5,
+    "payment": {
+      "paymentID": "payb8d78e96",
+      "relatedOrderID": "ORD1085",
+      "amount": 5.5,
+      "timestamp": "2025-06-03T19:22:09.202021+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-03T19:22:09.198466+00:00"
+  },
+  {
+    "orderID": "ORD1086",
+    "placingAccountID": "acc004",
+    "orderLinetems": [
+      {
+        "lineItemID": "slie5dce685",
+        "item_id": "TRP004",
+        "item_type": "ticket",
+        "item_name": "Ticket: Pending to Damai Central - 2024-06-17 09:00 AM",
+        "quantity": 1,
+        "unit_price": 10.0,
+        "lineTotal": 10.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 10.0,
+    "payment": {
+      "paymentID": "pay5b31798c",
+      "relatedOrderID": "ORD1086",
+      "amount": 10.0,
+      "timestamp": "2025-06-03T19:22:17.181547+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-03T19:22:17.177257+00:00"
+  },
+  {
+    "orderID": "ORD1087",
+    "placingAccountID": "acc004",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli9792507d",
+        "item_id": "TRP001",
+        "item_type": "ticket",
+        "item_name": "Ticket: Rembus to Hikmah Exchange - 2024-06-15 10:00 AM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 5.0,
+    "payment": {
+      "paymentID": "pay71485982",
+      "relatedOrderID": "ORD1087",
+      "amount": 5.0,
+      "timestamp": "2025-06-03T19:27:23.296351+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-03T19:27:23.292540+00:00"
+  },
+  {
+    "orderID": "ORD1088",
+    "placingAccountID": "acc004",
+    "orderLinetems": [
+      {
+        "lineItemID": "slidc4413d3",
+        "item_id": "TRP007",
+        "item_type": "ticket",
+        "item_name": "Ticket: UNIMAS to Sarawak General Hospital - 2024-06-18 01:00 PM",
+        "quantity": 1,
+        "unit_price": 5.5,
+        "lineTotal": 5.5,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 5.5,
+    "payment": {
+      "paymentID": "pay6679fc67",
+      "relatedOrderID": "ORD1088",
+      "amount": 5.5,
+      "timestamp": "2025-06-03T19:30:34.072357+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-03T19:30:34.068025+00:00"
+  },
+  {
+    "orderID": "ORD1089",
+    "placingAccountID": "acc004",
+    "orderLinetems": [
+      {
+        "lineItemID": "slic7b942a0",
+        "item_id": "TRP007",
+        "item_type": "ticket",
+        "item_name": "Ticket: UNIMAS to Sarawak General Hospital - 2024-06-18 01:00 PM",
+        "quantity": 1,
+        "unit_price": 5.5,
+        "lineTotal": 5.5,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 5.5,
+    "payment": null,
+    "status": "PENDING_PAYMENT",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-03T19:36:33.260778+00:00"
+  },
+  {
+    "orderID": "ORD1090",
+    "placingAccountID": "acc004",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli9237b414",
+        "item_id": "TRP006",
+        "item_type": "ticket",
+        "item_name": "Ticket: Kuching International Airport to VivaCity - 2024-06-18 08:30 AM",
+        "quantity": 1,
+        "unit_price": 6.0,
+        "lineTotal": 6.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 6.0,
+    "payment": {
+      "paymentID": "pay16bb6f63",
+      "relatedOrderID": "ORD1090",
+      "amount": 6.0,
+      "timestamp": "2025-06-03T19:37:43.725094+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-03T19:37:43.723352+00:00"
+  },
+  {
+    "orderID": "ORD1091",
+    "placingAccountID": "acc004",
+    "orderLinetems": [
+      {
+        "lineItemID": "slieb295c97",
+        "item_id": "TRP004",
+        "item_type": "ticket",
+        "item_name": "Ticket: Pending to Damai Central - 2024-06-17 09:00 AM",
+        "quantity": 1,
+        "unit_price": 10.0,
+        "lineTotal": 10.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 10.0,
+    "payment": {
+      "paymentID": "payfc8d5b8f",
+      "relatedOrderID": "ORD1091",
+      "amount": 10.0,
+      "timestamp": "2025-06-03T19:38:09.233456+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-03T19:38:09.229743+00:00"
+  },
+  {
+    "orderID": "ORD1092",
+    "placingAccountID": "acc004",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli41edadd6",
+        "item_id": "TRP006",
+        "item_type": "ticket",
+        "item_name": "Ticket: Kuching International Airport to VivaCity - 2024-06-18 08:30 AM",
+        "quantity": 1,
+        "unit_price": 6.0,
+        "lineTotal": 6.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 6.0,
+    "payment": {
+      "paymentID": "pay07abdd8d",
+      "relatedOrderID": "ORD1092",
+      "amount": 6.0,
+      "timestamp": "2025-06-03T19:39:22.766416+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-03T19:39:22.762492+00:00"
+  },
+  {
+    "orderID": "ORD1093",
+    "placingAccountID": "acc004",
+    "orderLinetems": [
+      {
+        "lineItemID": "slic2aba04b",
+        "item_id": "art003",
+        "item_type": "merchandise",
+        "item_name": "Miniature ART Vehicle Replica",
+        "quantity": 2,
+        "unit_price": 35.0,
+        "lineTotal": 70.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 70.0,
+    "payment": {
+      "paymentID": "pay5e07d669",
+      "relatedOrderID": "ORD1093",
+      "amount": 70.0,
+      "timestamp": "2025-06-03T20:18:39.246760+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-03T20:18:39.245807+00:00"
+  },
+  {
+    "orderID": "ORD1094",
+    "placingAccountID": "acc004",
+    "orderLinetems": [
+      {
+        "lineItemID": "slif72970db",
+        "item_id": "art003",
+        "item_type": "merchandise",
+        "item_name": "Miniature ART Vehicle Replica",
+        "quantity": 1,
+        "unit_price": 35.0,
+        "lineTotal": 35.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 35.0,
+    "payment": null,
+    "status": "PENDING_PAYMENT",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-03T20:22:38.636743+00:00"
+  },
+  {
+    "orderID": "ORD1095",
+    "placingAccountID": "acc004",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli05a954fc",
+        "item_id": "TRP002",
+        "item_type": "ticket",
+        "item_name": "Ticket: Rembus to Hikmah Exchange - 2024-06-15 2:00 PM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 5.0,
+    "payment": null,
+    "status": "PENDING_PAYMENT",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-03T20:23:43.269405+00:00"
+  },
+  {
+    "orderID": "ORD1096",
+    "placingAccountID": "acc004",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli6c800888",
+        "item_id": "art003",
+        "item_type": "merchandise",
+        "item_name": "Miniature ART Vehicle Replica",
+        "quantity": 1,
+        "unit_price": 35.0,
+        "lineTotal": 35.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 35.0,
+    "payment": null,
+    "status": "PENDING_PAYMENT",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-03T20:25:07.117600+00:00"
+  },
+  {
+    "orderID": "ORD1097",
+    "placingAccountID": "acc004",
+    "orderLinetems": [
+      {
+        "lineItemID": "sliad36ef43",
+        "item_id": "art003",
+        "item_type": "merchandise",
+        "item_name": "Miniature ART Vehicle Replica",
+        "quantity": 1,
+        "unit_price": 35.0,
+        "lineTotal": 35.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 35.0,
+    "payment": null,
+    "status": "PENDING_PAYMENT",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-03T20:25:58.861081+00:00"
+  },
+  {
+    "orderID": "ORD1098",
+    "placingAccountID": "acc005",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli6ac009e9",
+        "item_id": "TRP001",
+        "item_type": "ticket",
+        "item_name": "Ticket: Rembus to Hikmah Exchange - 2024-06-15 10:00 AM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "RESCHEDULED"
+      },
+      {
+        "lineItemID": "sli0dd8140d",
+        "item_id": "TRP002",
+        "item_type": "ticket",
+        "item_name": "Ticket: Rembus to Hikmah Exchange - 2024-06-15 2:00 PM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "CANCELLED"
+      }
+    ],
+    "totalAmount": 0.0,
+    "payment": {
+      "paymentID": "pay6c8dd010",
+      "relatedOrderID": "ORD1098",
+      "amount": 5.0,
+      "timestamp": "2025-06-03T20:31:37.439938+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "REFUNDED"
+    },
+    "status": "CANCELLED",
+    "cancellationRequests": [
+      "Cancellation requested by user on 2025-06-03T20:57:38.202521+00:00"
+    ],
+    "refundRequests": [
+      "Refund for 5.0 requested on 2025-06-03T20:57:38.207445+00:00 due to: User cancellation request processed on 2025-06-03T20:57:38.207283+00:00"
+    ],
+    "orderTimestamp": "2025-06-03T20:31:37.437262+00:00"
+  },
+  {
+    "orderID": "ORD1099",
+    "placingAccountID": "acc005",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli4887b3bd",
+        "item_id": "TRP001",
+        "item_type": "ticket",
+        "item_name": "Ticket: Rembus to Hikmah Exchange - 2024-06-15 10:00 AM",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "lineTotal": 5.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 5.0,
+    "payment": null,
+    "status": "PENDING_PAYMENT",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-03T20:32:51.604494+00:00"
+  },
+  {
+    "orderID": "ORD1100",
+    "placingAccountID": "acc005",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli5bb1d71c",
+        "item_id": "TRP004",
+        "item_type": "ticket",
+        "item_name": "Ticket: Pending to Damai Central - 2024-06-17 09:00 AM",
+        "quantity": 1,
+        "unit_price": 10.0,
+        "lineTotal": 10.0,
+        "line_item_status": "CANCELLED"
+      }
+    ],
+    "totalAmount": 0.0,
+    "payment": {
+      "paymentID": "payfe32a660",
+      "relatedOrderID": "ORD1100",
+      "amount": 10.0,
+      "timestamp": "2025-06-03T20:36:30.660228+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "REFUNDED"
+    },
+    "status": "CANCELLED",
+    "cancellationRequests": [
+      "Cancellation requested by user on 2025-06-03T20:41:19.119821+00:00"
+    ],
+    "refundRequests": [
+      "Refund for 10.0 requested on 2025-06-03T20:41:19.125983+00:00 due to: User cancellation request processed on 2025-06-03T20:41:19.125777+00:00"
+    ],
+    "orderTimestamp": "2025-06-03T20:36:30.657687+00:00"
+  },
+  {
+    "orderID": "ORD1101",
+    "placingAccountID": "acc005",
+    "orderLinetems": [
+      {
+        "lineItemID": "sliad7d7131",
+        "item_id": "art003",
+        "item_type": "merchandise",
+        "item_name": "Miniature ART Vehicle Replica",
+        "quantity": 2,
+        "unit_price": 35.0,
+        "lineTotal": 70.0,
+        "line_item_status": "CANCELLED"
+      },
+      {
+        "lineItemID": "slic424f78a",
+        "item_id": "art005",
+        "item_type": "merchandise",
+        "item_name": "ART 'Future of Transit' T-Shirt",
+        "quantity": 1,
+        "unit_price": 22.0,
+        "lineTotal": 22.0,
+        "line_item_status": "CANCELLED"
+      }
+    ],
+    "totalAmount": 0.0,
+    "payment": {
+      "paymentID": "pay5aff0743",
+      "relatedOrderID": "ORD1101",
+      "amount": 92.0,
+      "timestamp": "2025-06-03T20:39:21.020493+00:00",
+      "paymentMethodDetails": "Simulated Card",
+      "paymentStatus": "REFUNDED"
+    },
+    "status": "CANCELLED",
+    "cancellationRequests": [
+      "Cancellation requested by user on 2025-06-03T20:42:46.521271+00:00"
+    ],
+    "refundRequests": [
+      "Refund for 92.0 requested on 2025-06-03T20:42:46.578508+00:00 due to: User cancellation request processed on 2025-06-03T20:42:46.578370+00:00"
+    ],
+    "orderTimestamp": "2025-06-03T20:39:21.019748+00:00"
+  },
+  {
+    "orderID": "ORD1102",
+    "placingAccountID": "acc005",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli9e20b6cd",
+        "item_id": "art003",
+        "item_type": "merchandise",
+        "item_name": "Miniature ART Vehicle Replica",
+        "quantity": 1,
+        "unit_price": 35.0,
+        "lineTotal": 35.0,
+        "line_item_status": "CANCELLED"
+      }
+    ],
+    "totalAmount": 0.0,
+    "payment": {
+      "paymentID": "pay0491fbf3",
+      "relatedOrderID": "ORD1102",
+      "amount": 35.0,
+      "timestamp": "2025-06-03T20:43:34.427242+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "REFUNDED"
+    },
+    "status": "CANCELLED",
+    "cancellationRequests": [
+      "Cancellation requested by user on 2025-06-03T20:52:23.744561+00:00"
+    ],
+    "refundRequests": [
+      "Refund for 35.0 requested on 2025-06-03T20:52:23.747808+00:00 due to: User cancellation request processed on 2025-06-03T20:52:23.747522+00:00"
+    ],
+    "orderTimestamp": "2025-06-03T20:43:34.425959+00:00"
+  },
+  {
+    "orderID": "ORD1103",
+    "placingAccountID": "acc005",
+    "orderLinetems": [
+      {
+        "lineItemID": "sli8a8c0e18",
+        "item_id": "art003",
+        "item_type": "merchandise",
+        "item_name": "Miniature ART Vehicle Replica",
+        "quantity": 2,
+        "unit_price": 35.0,
+        "lineTotal": 70.0,
+        "line_item_status": "ACTIVE"
+      },
+      {
+        "lineItemID": "sli3a0fde43",
+        "item_id": "art005",
+        "item_type": "merchandise",
+        "item_name": "ART 'Future of Transit' T-Shirt",
+        "quantity": 1,
+        "unit_price": 22.0,
+        "lineTotal": 22.0,
+        "line_item_status": "ACTIVE"
+      }
+    ],
+    "totalAmount": 92.0,
+    "payment": {
+      "paymentID": "paya5b9bccb",
+      "relatedOrderID": "ORD1103",
+      "amount": 92.0,
+      "timestamp": "2025-06-04T00:02:26.664075+00:00",
+      "paymentMethodDetails": "Simulated Ewallet",
+      "paymentStatus": "SUCCESSFUL"
+    },
+    "status": "PAID",
+    "cancellationRequests": [],
+    "refundRequests": [],
+    "orderTimestamp": "2025-06-04T00:02:26.663249+00:00"
+  }
+]

@@ -1,0 +1,91 @@
+{% extends "layout.html" %}
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<div class="buy-merchandise-page"> {# Wrapper for page-specific styling #}
+    <div class="container card p-4 mt-4 shadow-sm"> {# Main page card #}
+        <h2 class="mb-4 page-title">{{ title }}</h2> 
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                        {{ message }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        <form method="POST" action="{{ url_for('order.buy_merchandise_bulk') }}">
+            {{ form.hidden_tag() }}
+
+            {% if merchandise_list %}
+                <div class="row">
+                {% for item in merchandise_list %}
+                    <div class="col-md-6 col-lg-4 mb-4"> {# Increased mb-4 for more vertical space #}
+                        <div class="merchandise-item card h-100">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">{{ item.name }}</h5>
+                                <p class="card-text small mb-2">{{ item.description }}</p> 
+                                <p class="card-text mb-1"><strong>Price:</strong> <span class="price-value">RM{{ "%.2f"|format(item.price) }}</span></p>
+
+                                {# Stock Display #}
+                                {% if item.stockLevel > 0 %}
+                                    <p class="card-text stock-indicator in-stock mb-2">
+                                        <i class="fas fa-check-circle me-1"></i>In Stock: {{ item.stockLevel }}
+                                    </p>
+                                    <div class="mt-auto"> {# Pushes quantity input to the bottom #}
+                                        <label for="quantity_{{ item.merchandiseID }}" class="form-label visually-hidden">Quantity for {{ item.name }}</label>
+                                        <input type="number" name="quantity_{{ item.merchandiseID }}" id="quantity_{{ item.merchandiseID }}"
+                                               class="form-control quantity-input" value="0" min="0" max="{{ item.stockLevel }}">
+                                    </div>
+                                {% else %}
+                                    <p class="card-text stock-indicator out-of-stock mt-auto mb-2"> 
+                                         <i class="fas fa-times-circle me-1"></i>Out of Stock
+                                    </p>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+                </div>
+
+                <div class="form-section mt-4 mb-4">
+                    <h3>Payment (Simulated)</h3>
+                    <p class="alert alert-info small"><i class="fas fa-info-circle me-1"></i> Select a payment method. No real transaction will occur.</p>
+                     {% if form.payment_type.errors %}
+                        <div class="errors text-danger mb-2">
+                            {% for error in form.payment_type.errors %}<small>{{ error }}</small><br>{% endfor %}
+                        </div>
+                    {% endif %}
+                    <div class="payment-options">
+                        {% for subfield in form.payment_type %}
+                        <div class="form-check form-check-inline">
+                            {{ subfield(class="form-check-input", id="merch_" + subfield.id) }}
+                            <label class="form-check-label" for="{{ "merch_" + subfield.id }}">
+                                {% if subfield.data == 'card' %}<i class="fas fa-credit-card me-1"></i>
+                                {% elif subfield.data == 'ewallet' %}<i class="fas fa-wallet me-1"></i>
+                                {% endif %}
+                                {{ subfield.label.text }}
+                            </label>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="text-center"> {# Centering the submit button container #}
+                    <button type="submit" class="btn btn-lg btn-success">
+                        <i class="fas fa-shopping-bag me-2"></i>{{ form.submit.label.text if form.submit.label else 'Buy Selected Items & Pay' }}
+                    </button>
+                </div>
+            {% else %}
+                <p class="alert alert-info">No merchandise items are currently available.</p>
+            {% endif %}
+        </form>
+         <div class="text-center mt-4"> {# Centering the back button container #}
+            <a href="{{ url_for('home.index') }}" class="btn btn-secondary">Back to Home</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
